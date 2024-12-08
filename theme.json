@@ -2,41 +2,191 @@
     "$schema": "https://schemas.wp.org/trunk/theme.json",
     "version": 2,
     "settings": {
-      "color": {
-        "palette": [
-          { "slug": "primary", "color": "#3498db", "name": "Primary" },
-          { "slug": "secondary", "color": "#2ecc71", "name": "Secondary" },
-          { "slug": "background", "color": "#ffffff", "name": "Background" },
-          { "slug": "text", "color": "#333333", "name": "Text" }
-        ],
-        "custom": false
-      },
-      "typography": {
-        "fontSizes": [
-          { "slug": "small", "size": "12px", "name": "Small" },
-          { "slug": "regular", "size": "16px", "name": "Regular" },
-          { "slug": "large", "size": "24px", "name": "Large" }
-        ],
-        "customFontSize": false
-      },
-      "layout": {
-        "contentSize": "800px",
-        "wideSize": "1200px"
-      },
-      "spacing": {
-        "customPadding": false,
-        "blockGap": "1.5rem"
-      }
+        "spacing": {
+            "blockGap": "1.5rem"
+        },
+        "layout": {
+            "contentSize": "880px",
+            "wideSize": "1225px"
+        },
+        "color": {
+            "palette": [
+                {
+                    "slug": "colorPrimary-00",
+                    "color": "#FFFAFA",
+                    "name": "Primary 00"
+                },
+                {
+                    "slug": "colorPrimary-01",
+                    "color": "#FFF0F0",
+                    "name": "Primary 01"
+                },
+                {
+                    "slug": "colorPrimary-03",
+                    "color": "#FFB2B2",
+                    "name": "Primary 03"
+                },
+                {
+                    "slug": "colorPrimary-04",
+                    "color": "#FC8888",
+                    "name": "Primary 04"
+                },
+                {
+                    "slug": "colorPrimary-06",
+                    "color": "#E01F1F",
+                    "name": "Primary 06"
+                },
+                {
+                    "slug": "colorPrimary-09",
+                    "color": "#5D0404",
+                    "name": "Primary 09"
+                },
+                {
+                    "slug": "grey-01",
+                    "color": "#FAFAFA",
+                    "name": "Grey 01"
+                },
+                {
+                    "slug": "grey-02",
+                    "color": "#F0F0F0",
+                    "name": "Grey 02"
+                },
+                {
+                    "slug": "grey-07",
+                    "color": "#595959",
+                    "name": "Grey 07"
+                },
+                {
+                    "slug": "grey-09",
+                    "color": "#393939",
+                    "name": "Grey 09"
+                },
+                {
+                    "slug": "grey-10",
+                    "color": "#242424",
+                    "name": "Grey 10"
+                },
+                {
+                    "slug": "black",
+                    "color": "#151515",
+                    "name": "Black"
+                }
+            ]
+        },
+        "spacing": {
+            "sizes": [
+                {
+                    "slug": "extrasmall",
+                    "size": "8px",
+                    "name": "Extra Small"
+                },
+                {
+                    "slug": "small",
+                    "size": "16px",
+                    "name": "Small"
+                },
+                {
+                    "slug": "medium",
+                    "size": "32px",
+                    "name": "Medium"
+                },
+                {
+                    "slug": "large",
+                    "size": "48px",
+                    "name": "Large"
+                },
+                {
+                    "slug": "extralarge",
+                    "size": "96px",
+                    "name": "Extra Large"
+                }
+            ]
+        },
+        "typography": {
+            "fontSizes": [
+                {
+                    "slug": "small",
+                    "size": "12px",
+                    "name": "Small"
+                },
+                {
+                    "slug": "regular",
+                    "size": "16px",
+                    "name": "Regular"
+                },
+                {
+                    "slug": "large",
+                    "size": "24px",
+                    "name": "Large"
+                }
+            ],
+            "fontFamilies": [
+                {
+                    "fontFamily": "Josefin Sans, sans-serif",
+                    "name": "Josefin Sans",
+                    "slug": "josefin-sans"
+                },
+                {
+                    "fontFamily": "Lexend, sans-serif",
+                    "name": "Lexend",
+                    "slug": "lexend"
+                }
+            ]
+        },
+        "border": {
+            "radius": [
+                {
+                    "slug": "extrasmall",
+                    "size": "12px",
+                    "name": "Extra Small"
+                },
+                {
+                    "slug": "small",
+                    "size": "16px",
+                    "name": "Small"
+                },
+                {
+                    "slug": "medium",
+                    "size": "24px",
+                    "name": "Medium"
+                },
+                {
+                    "slug": "large",
+                    "size": "32px",
+                    "name": "Large"
+                },
+                {
+                    "slug": "extralarge",
+                    "size": "48px",
+                    "name": "Extra Large"
+                }
+            ]
+        }
     },
     "styles": {
-      "color": {
-        "background": "#ffffff",
-        "text": "#333333"
-      },
-      "typography": {
-        "fontSize": "16px",
-        "lineHeight": "1.6"
-      }
+        "color": {
+            "background": "#FAFAFA",
+            "text": "#333333"
+        },
+        "typography": {
+            "fontFamily": "var:preset|font-family|lexend"
+        },
+        "elements": {
+            "h1": {
+                "typography": {
+                    "fontFamily": "var:preset|font-family|josefin-sans"
+                }
+            },
+            "h2": {
+                "typography": {
+                    "fontFamily": "var:preset|font-family|josefin-sans"
+                }
+            },
+            "h3": {
+                "typography": {
+                    "fontFamily": "var:preset|font-family|josefin-sans"
+                }
+            }
+        }
     }
-  }
-  
+}

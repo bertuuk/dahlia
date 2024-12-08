@@ -1,0 +1,30 @@
+{
+    "version": 2,
+    "title": "young-dahlia",
+    "settings": {
+        "color": {
+            "palette": [
+                {
+                    "slug": "warm-red",
+                    "color": "#FF6F61",
+                    "name": "Warm Red"
+                },
+                {
+                    "slug": "warm-orange",
+                    "color": "#FFB400",
+                    "name": "Warm Orange"
+                },
+                {
+                    "slug": "warm-yellow",
+                    "color": "#FFD700",
+                    "name": "Warm Yellow"
+                }
+            ]
+        }
+    },
+    "styles": {
+        "border": {
+            "radius": "5px"
+        }
+    }
+}

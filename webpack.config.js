@@ -4,7 +4,8 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 module.exports = {
     entry: {
         main: './assets/js/main.js',
-        style: './assets/sass/main.scss'
+        style: './assets/sass/main.scss',
+        editor: './assets/sass/editor.scss'
     },
     output: {
         path: path.resolve(__dirname, 'build'),
