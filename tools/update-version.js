@@ -48,8 +48,7 @@ const { execSync } = require("child_process");
 
 try {
   execSync(`git add .`);
-  execSync(`git commit -m "🔖 Release v${version}"`);
-  execSync(`git tag v${version}`);
+  execSync(`git commit -m "Update files to v${version}"`);
   execSync(`git push`);
   execSync(`git push --tags`);
   console.log(`🚀 Git commit + tag pushed: v${version}`);
