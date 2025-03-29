@@ -1,0 +1,19 @@
+@use '../base/vars' as *;
+.wp-block-post-terms{
+    display:flex;
+    flex-wrap: wrap;
+    a{
+        background-color: $primary-03;
+        padding:7px;
+        border-radius:8px;
+        font-size:0.875rem;
+        margin-bottom: 10px;
+        &:not(:last-of-type){
+            margin-right:10px;
+        }
+
+    }
+    &__separator{
+        @include visually-hidden;
+    }
+}

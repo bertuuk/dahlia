@@ -1,0 +1,55 @@
+@use '../base/vars' as *;
+*{
+	box-sizing:border-box;
+}
+
+
+.sr-only{
+	@include visually-hidden;
+}
+
+a {
+    text-decoration: none; // Elimina el subrayado
+    color: inherit; // Hereda el color del elemento padre
+
+    // Excluye enlaces dentro de párrafos
+}
+
+p>a {
+    text-decoration: underline; // Asegura que siga sin subrayado
+    color: $primary-06; // O cualquier color que prefieras
+}
+button{
+    background-color: $grey-02;
+    border-radius: 0.5rem;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.15);
+    border:none;
+    display:flex;
+    align-items: center;
+    padding:0.75rem;
+    font-size:1rem;
+    color: $grey-09;
+    gap: 0.5rem; // Añade separación entre elementos hijos
+    &:hover{
+        background-color: $grey-07;
+        box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.25);
+        color:white;
+        *{
+            background-color: $white;
+        }
+    }
+
+}
+
+.is-layout-constrained > :where(:not(.alignfull)){
+    padding-left:10px;
+    padding-right:10px;
+    @media(min-width:$screen-lg){
+        padding-right:15px;
+        padding-left:15px;
+    }
+    @media(min-width:$screen-xl){
+        padding-right:0;
+        padding-left:0;
+    }
+}
