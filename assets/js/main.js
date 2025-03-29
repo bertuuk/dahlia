@@ -1,1 +1,4 @@
-console.log('Dhalia theme loaded!');
+import './carousel';
+import './cardLinks';
+import './lazyLoad';
+  

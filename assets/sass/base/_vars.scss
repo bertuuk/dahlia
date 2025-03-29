@@ -1,0 +1,51 @@
+$primary-00: var(--wp--preset--color--color-primary-00, #FFFAFA);
+$primary-01: var(--wp--preset--color--color-primary-01, #FFF0F0);
+$primary-02: var(--wp--preset--color--color-primary-02, #FFD6D6);
+$primary-03: var(--wp--preset--color--color-primary-03, #FFB2B2);
+$primary-04: var(--wp--preset--color--color-primary-04, #FC8888);
+$primary-05: var(--wp--preset--color--color-primary-05, #E65151);
+$primary-06: var(--wp--preset--color--color-primary-06, #E01F1F);
+$primary-07: var(--wp--preset--color--color-primary-07, #B61616);
+$primary-08: var(--wp--preset--color--color-primary-08, #880101);
+$primary-09: var(--wp--preset--color--color-primary-09, #5D0404);
+$primary-10: var(--wp--preset--color--color-primary-10, #290100);
+
+$grey-01: var(--wp--preset--color--grey-01, #FAFAFA);
+$grey-02: var(--wp--preset--color--grey-02, #F0F0F0);
+$grey-03: var(--wp--preset--color--grey-03, #E3E3E3);
+$grey-04: var(--wp--preset--color--grey-04, #CFCFCF);
+$grey-05: var(--wp--preset--color--grey-05, #A8A8A8);
+$grey-06: var(--wp--preset--color--grey-06, #7A7A7A);
+$grey-07: var(--wp--preset--color--grey-07, #595959);
+$grey-08: var(--wp--preset--color--grey-08, #424242);
+$grey-09: var(--wp--preset--color--grey-09, #393939);
+$grey-10: var(--wp--preset--color--grey-10, #242424);
+
+$black: var(--wp--preset--color--black, #151515);
+$white: var(--wp--preset--color--color-primary-00, #FFFAFA);
+
+$gradient-0607: linear-gradient(128deg, $primary-06 5.2%, $primary-07 95.51%);
+
+@mixin visually-hidden {
+	border: 0 !important;
+	clip: rect(1px, 1px, 1px, 1px) !important;
+	/* 1 */
+	-webkit-clip-path: inset(50%) !important;
+	clip-path: inset(50%) !important;
+	/* 2 */
+	height: 1px !important;
+	margin: -1px !important;
+	overflow: hidden !important;
+	padding: 0 !important;
+	position: absolute !important;
+	width: 1px !important;
+	white-space: nowrap !important;
+}
+
+$screen-xxl: 1400px;
+$screen-xl: 1200px;
+$screen-lg: 992px;
+$screen-md: 768px;
+$screen-sm: 576px;
+
+$drop-shadow-04: 0px 3px 8px 0px rgba(0, 0, 0, 0.06), 0px 5px 14px 2px rgba(0, 0, 0, 0.07);

@@ -4,8 +4,9 @@
   "description": "Wordpress theme based on guttenberg blocks",
   "main": "webpack.config.js",
   "scripts": {
+    "generate-icons": "node tools/generate-icons-css.js",
     "start": "webpack --watch",
-    "build": "webpack --mode production"
+    "build": "node tools/generate-icons-css.js && webpack --mode production"
   },
   "browserslist": [
     "last 2 versions",
@@ -22,11 +23,17 @@
     "babel-loader": "^9.2.1",
     "css-loader": "^7.1.2",
     "file-loader": "^6.2.0",
+    "fs": "^0.0.1-security",
+    "glob": "^11.0.0",
     "mini-css-extract-plugin": "^2.9.2",
     "postcss-loader": "^8.1.1",
     "sass-loader": "^16.0.4",
     "style-loader": "^4.0.0",
     "webpack": "^5.97.1",
     "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "lazysizes": "^5.3.2",
+    "tiny-slider": "^2.9.4"
   }
 }

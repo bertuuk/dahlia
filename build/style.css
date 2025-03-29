@@ -1,14 +1,2639 @@
-/*!**********************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./assets/sass/main.scss ***!
-  \**********************************************************************************************************************************************************/
+/*!**************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[3]!./assets/sass/main.scss ***!
+  \**************************************************************************************************************************************************************************************/
+@charset "UTF-8";
 .alignwide {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.alignfull {
-  width: 100%;
-  margin-left: 0;
-  margin-right: 0;
+/* Clases generadas automáticamente para los iconos */
+.dahlia-icon {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  background-color: var(--wp--preset--color--grey-09);
+}
+.dahlia-icon.di-extrasmall {
+  width: 1rem;
+  height: 1rem;
+}
+.dahlia-icon.di-small {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+.dahlia-icon.di-large {
+  width: 2rem;
+  height: 2rem;
+}
+.dahlia-icon.di-extralarge {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.dahlia-fi-rr-add {
+  -webkit-mask-image: url(icons/fi-rr-add.svg);
+  mask-image: url(icons/fi-rr-add.svg);
+}
+
+.dahlia-fi-rr-address-book {
+  -webkit-mask-image: url(icons/fi-rr-address-book.svg);
+  mask-image: url(icons/fi-rr-address-book.svg);
+}
+
+.dahlia-fi-rr-alarm-clock {
+  -webkit-mask-image: url(icons/fi-rr-alarm-clock.svg);
+  mask-image: url(icons/fi-rr-alarm-clock.svg);
+}
+
+.dahlia-fi-rr-align-center {
+  -webkit-mask-image: url(icons/fi-rr-align-center.svg);
+  mask-image: url(icons/fi-rr-align-center.svg);
+}
+
+.dahlia-fi-rr-align-justify {
+  -webkit-mask-image: url(icons/fi-rr-align-justify.svg);
+  mask-image: url(icons/fi-rr-align-justify.svg);
+}
+
+.dahlia-fi-rr-align-left {
+  -webkit-mask-image: url(icons/fi-rr-align-left.svg);
+  mask-image: url(icons/fi-rr-align-left.svg);
+}
+
+.dahlia-fi-rr-align-right {
+  -webkit-mask-image: url(icons/fi-rr-align-right.svg);
+  mask-image: url(icons/fi-rr-align-right.svg);
+}
+
+.dahlia-fi-rr-ambulance {
+  -webkit-mask-image: url(icons/fi-rr-ambulance.svg);
+  mask-image: url(icons/fi-rr-ambulance.svg);
+}
+
+.dahlia-fi-rr-angle-double-left {
+  -webkit-mask-image: url(icons/fi-rr-angle-double-left.svg);
+  mask-image: url(icons/fi-rr-angle-double-left.svg);
+}
+
+.dahlia-fi-rr-angle-double-right {
+  -webkit-mask-image: url(icons/fi-rr-angle-double-right.svg);
+  mask-image: url(icons/fi-rr-angle-double-right.svg);
+}
+
+.dahlia-fi-rr-angle-double-small-left {
+  -webkit-mask-image: url(icons/fi-rr-angle-double-small-left.svg);
+  mask-image: url(icons/fi-rr-angle-double-small-left.svg);
+}
+
+.dahlia-fi-rr-angle-double-small-right {
+  -webkit-mask-image: url(icons/fi-rr-angle-double-small-right.svg);
+  mask-image: url(icons/fi-rr-angle-double-small-right.svg);
+}
+
+.dahlia-fi-rr-angle-down {
+  -webkit-mask-image: url(icons/fi-rr-angle-down.svg);
+  mask-image: url(icons/fi-rr-angle-down.svg);
+}
+
+.dahlia-fi-rr-angle-left {
+  -webkit-mask-image: url(icons/fi-rr-angle-left.svg);
+  mask-image: url(icons/fi-rr-angle-left.svg);
+}
+
+.dahlia-fi-rr-angle-right {
+  -webkit-mask-image: url(icons/fi-rr-angle-right.svg);
+  mask-image: url(icons/fi-rr-angle-right.svg);
+}
+
+.dahlia-fi-rr-angle-small-down {
+  -webkit-mask-image: url(icons/fi-rr-angle-small-down.svg);
+  mask-image: url(icons/fi-rr-angle-small-down.svg);
+}
+
+.dahlia-fi-rr-angle-small-left {
+  -webkit-mask-image: url(icons/fi-rr-angle-small-left.svg);
+  mask-image: url(icons/fi-rr-angle-small-left.svg);
+}
+
+.dahlia-fi-rr-angle-small-right {
+  -webkit-mask-image: url(icons/fi-rr-angle-small-right.svg);
+  mask-image: url(icons/fi-rr-angle-small-right.svg);
+}
+
+.dahlia-fi-rr-angle-small-up {
+  -webkit-mask-image: url(icons/fi-rr-angle-small-up.svg);
+  mask-image: url(icons/fi-rr-angle-small-up.svg);
+}
+
+.dahlia-fi-rr-angle-up {
+  -webkit-mask-image: url(icons/fi-rr-angle-up.svg);
+  mask-image: url(icons/fi-rr-angle-up.svg);
+}
+
+.dahlia-fi-rr-apple {
+  -webkit-mask-image: url(icons/fi-rr-apple.svg);
+  mask-image: url(icons/fi-rr-apple.svg);
+}
+
+.dahlia-fi-rr-apps-add {
+  -webkit-mask-image: url(icons/fi-rr-apps-add.svg);
+  mask-image: url(icons/fi-rr-apps-add.svg);
+}
+
+.dahlia-fi-rr-apps-delete {
+  -webkit-mask-image: url(icons/fi-rr-apps-delete.svg);
+  mask-image: url(icons/fi-rr-apps-delete.svg);
+}
+
+.dahlia-fi-rr-apps-sort {
+  -webkit-mask-image: url(icons/fi-rr-apps-sort.svg);
+  mask-image: url(icons/fi-rr-apps-sort.svg);
+}
+
+.dahlia-fi-rr-apps {
+  -webkit-mask-image: url(icons/fi-rr-apps.svg);
+  mask-image: url(icons/fi-rr-apps.svg);
+}
+
+.dahlia-fi-rr-archive {
+  -webkit-mask-image: url(icons/fi-rr-archive.svg);
+  mask-image: url(icons/fi-rr-archive.svg);
+}
+
+.dahlia-fi-rr-arrow-down {
+  -webkit-mask-image: url(icons/fi-rr-arrow-down.svg);
+  mask-image: url(icons/fi-rr-arrow-down.svg);
+}
+
+.dahlia-fi-rr-arrow-from-bottom {
+  -webkit-mask-image: url(icons/fi-rr-arrow-from-bottom.svg);
+  mask-image: url(icons/fi-rr-arrow-from-bottom.svg);
+}
+
+.dahlia-fi-rr-arrow-left {
+  -webkit-mask-image: url(icons/fi-rr-arrow-left.svg);
+  mask-image: url(icons/fi-rr-arrow-left.svg);
+}
+
+.dahlia-fi-rr-arrow-right {
+  -webkit-mask-image: url(icons/fi-rr-arrow-right.svg);
+  mask-image: url(icons/fi-rr-arrow-right.svg);
+}
+
+.dahlia-fi-rr-arrow-small-down {
+  -webkit-mask-image: url(icons/fi-rr-arrow-small-down.svg);
+  mask-image: url(icons/fi-rr-arrow-small-down.svg);
+}
+
+.dahlia-fi-rr-arrow-small-left {
+  -webkit-mask-image: url(icons/fi-rr-arrow-small-left.svg);
+  mask-image: url(icons/fi-rr-arrow-small-left.svg);
+}
+
+.dahlia-fi-rr-arrow-small-right {
+  -webkit-mask-image: url(icons/fi-rr-arrow-small-right.svg);
+  mask-image: url(icons/fi-rr-arrow-small-right.svg);
+}
+
+.dahlia-fi-rr-arrow-small-up {
+  -webkit-mask-image: url(icons/fi-rr-arrow-small-up.svg);
+  mask-image: url(icons/fi-rr-arrow-small-up.svg);
+}
+
+.dahlia-fi-rr-arrow-up {
+  -webkit-mask-image: url(icons/fi-rr-arrow-up.svg);
+  mask-image: url(icons/fi-rr-arrow-up.svg);
+}
+
+.dahlia-fi-rr-asterik {
+  -webkit-mask-image: url(icons/fi-rr-asterik.svg);
+  mask-image: url(icons/fi-rr-asterik.svg);
+}
+
+.dahlia-fi-rr-at {
+  -webkit-mask-image: url(icons/fi-rr-at.svg);
+  mask-image: url(icons/fi-rr-at.svg);
+}
+
+.dahlia-fi-rr-backpack {
+  -webkit-mask-image: url(icons/fi-rr-backpack.svg);
+  mask-image: url(icons/fi-rr-backpack.svg);
+}
+
+.dahlia-fi-rr-badge {
+  -webkit-mask-image: url(icons/fi-rr-badge.svg);
+  mask-image: url(icons/fi-rr-badge.svg);
+}
+
+.dahlia-fi-rr-balloons {
+  -webkit-mask-image: url(icons/fi-rr-balloons.svg);
+  mask-image: url(icons/fi-rr-balloons.svg);
+}
+
+.dahlia-fi-rr-ban {
+  -webkit-mask-image: url(icons/fi-rr-ban.svg);
+  mask-image: url(icons/fi-rr-ban.svg);
+}
+
+.dahlia-fi-rr-band-aid {
+  -webkit-mask-image: url(icons/fi-rr-band-aid.svg);
+  mask-image: url(icons/fi-rr-band-aid.svg);
+}
+
+.dahlia-fi-rr-bank {
+  -webkit-mask-image: url(icons/fi-rr-bank.svg);
+  mask-image: url(icons/fi-rr-bank.svg);
+}
+
+.dahlia-fi-rr-barber-shop {
+  -webkit-mask-image: url(icons/fi-rr-barber-shop.svg);
+  mask-image: url(icons/fi-rr-barber-shop.svg);
+}
+
+.dahlia-fi-rr-baseball {
+  -webkit-mask-image: url(icons/fi-rr-baseball.svg);
+  mask-image: url(icons/fi-rr-baseball.svg);
+}
+
+.dahlia-fi-rr-basketball {
+  -webkit-mask-image: url(icons/fi-rr-basketball.svg);
+  mask-image: url(icons/fi-rr-basketball.svg);
+}
+
+.dahlia-fi-rr-bed {
+  -webkit-mask-image: url(icons/fi-rr-bed.svg);
+  mask-image: url(icons/fi-rr-bed.svg);
+}
+
+.dahlia-fi-rr-beer {
+  -webkit-mask-image: url(icons/fi-rr-beer.svg);
+  mask-image: url(icons/fi-rr-beer.svg);
+}
+
+.dahlia-fi-rr-bell-ring {
+  -webkit-mask-image: url(icons/fi-rr-bell-ring.svg);
+  mask-image: url(icons/fi-rr-bell-ring.svg);
+}
+
+.dahlia-fi-rr-bell-school {
+  -webkit-mask-image: url(icons/fi-rr-bell-school.svg);
+  mask-image: url(icons/fi-rr-bell-school.svg);
+}
+
+.dahlia-fi-rr-bell {
+  -webkit-mask-image: url(icons/fi-rr-bell.svg);
+  mask-image: url(icons/fi-rr-bell.svg);
+}
+
+.dahlia-fi-rr-bike {
+  -webkit-mask-image: url(icons/fi-rr-bike.svg);
+  mask-image: url(icons/fi-rr-bike.svg);
+}
+
+.dahlia-fi-rr-billiard {
+  -webkit-mask-image: url(icons/fi-rr-billiard.svg);
+  mask-image: url(icons/fi-rr-billiard.svg);
+}
+
+.dahlia-fi-rr-bold {
+  -webkit-mask-image: url(icons/fi-rr-bold.svg);
+  mask-image: url(icons/fi-rr-bold.svg);
+}
+
+.dahlia-fi-rr-book-alt {
+  -webkit-mask-image: url(icons/fi-rr-book-alt.svg);
+  mask-image: url(icons/fi-rr-book-alt.svg);
+}
+
+.dahlia-fi-rr-book {
+  -webkit-mask-image: url(icons/fi-rr-book.svg);
+  mask-image: url(icons/fi-rr-book.svg);
+}
+
+.dahlia-fi-rr-bookmark-filled {
+  -webkit-mask-image: url(icons/fi-rr-bookmark-filled.svg);
+  mask-image: url(icons/fi-rr-bookmark-filled.svg);
+}
+
+.dahlia-fi-rr-bookmark {
+  -webkit-mask-image: url(icons/fi-rr-bookmark.svg);
+  mask-image: url(icons/fi-rr-bookmark.svg);
+}
+
+.dahlia-fi-rr-bowling {
+  -webkit-mask-image: url(icons/fi-rr-bowling.svg);
+  mask-image: url(icons/fi-rr-bowling.svg);
+}
+
+.dahlia-fi-rr-box-alt {
+  -webkit-mask-image: url(icons/fi-rr-box-alt.svg);
+  mask-image: url(icons/fi-rr-box-alt.svg);
+}
+
+.dahlia-fi-rr-box {
+  -webkit-mask-image: url(icons/fi-rr-box.svg);
+  mask-image: url(icons/fi-rr-box.svg);
+}
+
+.dahlia-fi-rr-bread-slice {
+  -webkit-mask-image: url(icons/fi-rr-bread-slice.svg);
+  mask-image: url(icons/fi-rr-bread-slice.svg);
+}
+
+.dahlia-fi-rr-briefcase {
+  -webkit-mask-image: url(icons/fi-rr-briefcase.svg);
+  mask-image: url(icons/fi-rr-briefcase.svg);
+}
+
+.dahlia-fi-rr-broom {
+  -webkit-mask-image: url(icons/fi-rr-broom.svg);
+  mask-image: url(icons/fi-rr-broom.svg);
+}
+
+.dahlia-fi-rr-browser {
+  -webkit-mask-image: url(icons/fi-rr-browser.svg);
+  mask-image: url(icons/fi-rr-browser.svg);
+}
+
+.dahlia-fi-rr-brush {
+  -webkit-mask-image: url(icons/fi-rr-brush.svg);
+  mask-image: url(icons/fi-rr-brush.svg);
+}
+
+.dahlia-fi-rr-bug {
+  -webkit-mask-image: url(icons/fi-rr-bug.svg);
+  mask-image: url(icons/fi-rr-bug.svg);
+}
+
+.dahlia-fi-rr-building {
+  -webkit-mask-image: url(icons/fi-rr-building.svg);
+  mask-image: url(icons/fi-rr-building.svg);
+}
+
+.dahlia-fi-rr-bulb {
+  -webkit-mask-image: url(icons/fi-rr-bulb.svg);
+  mask-image: url(icons/fi-rr-bulb.svg);
+}
+
+.dahlia-fi-rr-butterfly {
+  -webkit-mask-image: url(icons/fi-rr-butterfly.svg);
+  mask-image: url(icons/fi-rr-butterfly.svg);
+}
+
+.dahlia-fi-rr-cake-birthday {
+  -webkit-mask-image: url(icons/fi-rr-cake-birthday.svg);
+  mask-image: url(icons/fi-rr-cake-birthday.svg);
+}
+
+.dahlia-fi-rr-cake-wedding {
+  -webkit-mask-image: url(icons/fi-rr-cake-wedding.svg);
+  mask-image: url(icons/fi-rr-cake-wedding.svg);
+}
+
+.dahlia-fi-rr-calculator {
+  -webkit-mask-image: url(icons/fi-rr-calculator.svg);
+  mask-image: url(icons/fi-rr-calculator.svg);
+}
+
+.dahlia-fi-rr-calendar {
+  -webkit-mask-image: url(icons/fi-rr-calendar.svg);
+  mask-image: url(icons/fi-rr-calendar.svg);
+}
+
+.dahlia-fi-rr-call-history {
+  -webkit-mask-image: url(icons/fi-rr-call-history.svg);
+  mask-image: url(icons/fi-rr-call-history.svg);
+}
+
+.dahlia-fi-rr-call-incoming {
+  -webkit-mask-image: url(icons/fi-rr-call-incoming.svg);
+  mask-image: url(icons/fi-rr-call-incoming.svg);
+}
+
+.dahlia-fi-rr-call-missed {
+  -webkit-mask-image: url(icons/fi-rr-call-missed.svg);
+  mask-image: url(icons/fi-rr-call-missed.svg);
+}
+
+.dahlia-fi-rr-call-outgoing {
+  -webkit-mask-image: url(icons/fi-rr-call-outgoing.svg);
+  mask-image: url(icons/fi-rr-call-outgoing.svg);
+}
+
+.dahlia-fi-rr-camera {
+  -webkit-mask-image: url(icons/fi-rr-camera.svg);
+  mask-image: url(icons/fi-rr-camera.svg);
+}
+
+.dahlia-fi-rr-camping {
+  -webkit-mask-image: url(icons/fi-rr-camping.svg);
+  mask-image: url(icons/fi-rr-camping.svg);
+}
+
+.dahlia-fi-rr-car {
+  -webkit-mask-image: url(icons/fi-rr-car.svg);
+  mask-image: url(icons/fi-rr-car.svg);
+}
+
+.dahlia-fi-rr-caret-down {
+  -webkit-mask-image: url(icons/fi-rr-caret-down.svg);
+  mask-image: url(icons/fi-rr-caret-down.svg);
+}
+
+.dahlia-fi-rr-caret-left {
+  -webkit-mask-image: url(icons/fi-rr-caret-left.svg);
+  mask-image: url(icons/fi-rr-caret-left.svg);
+}
+
+.dahlia-fi-rr-caret-right {
+  -webkit-mask-image: url(icons/fi-rr-caret-right.svg);
+  mask-image: url(icons/fi-rr-caret-right.svg);
+}
+
+.dahlia-fi-rr-caret-up {
+  -webkit-mask-image: url(icons/fi-rr-caret-up.svg);
+  mask-image: url(icons/fi-rr-caret-up.svg);
+}
+
+.dahlia-fi-rr-carrot {
+  -webkit-mask-image: url(icons/fi-rr-carrot.svg);
+  mask-image: url(icons/fi-rr-carrot.svg);
+}
+
+.dahlia-fi-rr-chart-connected {
+  -webkit-mask-image: url(icons/fi-rr-chart-connected.svg);
+  mask-image: url(icons/fi-rr-chart-connected.svg);
+}
+
+.dahlia-fi-rr-chart-histogram {
+  -webkit-mask-image: url(icons/fi-rr-chart-histogram.svg);
+  mask-image: url(icons/fi-rr-chart-histogram.svg);
+}
+
+.dahlia-fi-rr-chart-network {
+  -webkit-mask-image: url(icons/fi-rr-chart-network.svg);
+  mask-image: url(icons/fi-rr-chart-network.svg);
+}
+
+.dahlia-fi-rr-chart-pie-alt {
+  -webkit-mask-image: url(icons/fi-rr-chart-pie-alt.svg);
+  mask-image: url(icons/fi-rr-chart-pie-alt.svg);
+}
+
+.dahlia-fi-rr-chart-pie {
+  -webkit-mask-image: url(icons/fi-rr-chart-pie.svg);
+  mask-image: url(icons/fi-rr-chart-pie.svg);
+}
+
+.dahlia-fi-rr-chart-pyramid {
+  -webkit-mask-image: url(icons/fi-rr-chart-pyramid.svg);
+  mask-image: url(icons/fi-rr-chart-pyramid.svg);
+}
+
+.dahlia-fi-rr-chart-set-theory {
+  -webkit-mask-image: url(icons/fi-rr-chart-set-theory.svg);
+  mask-image: url(icons/fi-rr-chart-set-theory.svg);
+}
+
+.dahlia-fi-rr-chart-tree {
+  -webkit-mask-image: url(icons/fi-rr-chart-tree.svg);
+  mask-image: url(icons/fi-rr-chart-tree.svg);
+}
+
+.dahlia-fi-rr-chat-arrow-down {
+  -webkit-mask-image: url(icons/fi-rr-chat-arrow-down.svg);
+  mask-image: url(icons/fi-rr-chat-arrow-down.svg);
+}
+
+.dahlia-fi-rr-chat-arrow-grow {
+  -webkit-mask-image: url(icons/fi-rr-chat-arrow-grow.svg);
+  mask-image: url(icons/fi-rr-chat-arrow-grow.svg);
+}
+
+.dahlia-fi-rr-check {
+  -webkit-mask-image: url(icons/fi-rr-check.svg);
+  mask-image: url(icons/fi-rr-check.svg);
+}
+
+.dahlia-fi-rr-checkbox {
+  -webkit-mask-image: url(icons/fi-rr-checkbox.svg);
+  mask-image: url(icons/fi-rr-checkbox.svg);
+}
+
+.dahlia-fi-rr-cheese {
+  -webkit-mask-image: url(icons/fi-rr-cheese.svg);
+  mask-image: url(icons/fi-rr-cheese.svg);
+}
+
+.dahlia-fi-rr-chess-piece {
+  -webkit-mask-image: url(icons/fi-rr-chess-piece.svg);
+  mask-image: url(icons/fi-rr-chess-piece.svg);
+}
+
+.dahlia-fi-rr-child-head {
+  -webkit-mask-image: url(icons/fi-rr-child-head.svg);
+  mask-image: url(icons/fi-rr-child-head.svg);
+}
+
+.dahlia-fi-rr-circle-small {
+  -webkit-mask-image: url(icons/fi-rr-circle-small.svg);
+  mask-image: url(icons/fi-rr-circle-small.svg);
+}
+
+.dahlia-fi-rr-circle {
+  -webkit-mask-image: url(icons/fi-rr-circle.svg);
+  mask-image: url(icons/fi-rr-circle.svg);
+}
+
+.dahlia-fi-rr-clip {
+  -webkit-mask-image: url(icons/fi-rr-clip.svg);
+  mask-image: url(icons/fi-rr-clip.svg);
+}
+
+.dahlia-fi-rr-clock {
+  -webkit-mask-image: url(icons/fi-rr-clock.svg);
+  mask-image: url(icons/fi-rr-clock.svg);
+}
+
+.dahlia-fi-rr-cloud-check {
+  -webkit-mask-image: url(icons/fi-rr-cloud-check.svg);
+  mask-image: url(icons/fi-rr-cloud-check.svg);
+}
+
+.dahlia-fi-rr-cloud-disabled {
+  -webkit-mask-image: url(icons/fi-rr-cloud-disabled.svg);
+  mask-image: url(icons/fi-rr-cloud-disabled.svg);
+}
+
+.dahlia-fi-rr-cloud-download {
+  -webkit-mask-image: url(icons/fi-rr-cloud-download.svg);
+  mask-image: url(icons/fi-rr-cloud-download.svg);
+}
+
+.dahlia-fi-rr-cloud-share {
+  -webkit-mask-image: url(icons/fi-rr-cloud-share.svg);
+  mask-image: url(icons/fi-rr-cloud-share.svg);
+}
+
+.dahlia-fi-rr-cloud-upload {
+  -webkit-mask-image: url(icons/fi-rr-cloud-upload.svg);
+  mask-image: url(icons/fi-rr-cloud-upload.svg);
+}
+
+.dahlia-fi-rr-cloud {
+  -webkit-mask-image: url(icons/fi-rr-cloud.svg);
+  mask-image: url(icons/fi-rr-cloud.svg);
+}
+
+.dahlia-fi-rr-clouds {
+  -webkit-mask-image: url(icons/fi-rr-clouds.svg);
+  mask-image: url(icons/fi-rr-clouds.svg);
+}
+
+.dahlia-fi-rr-cocktail {
+  -webkit-mask-image: url(icons/fi-rr-cocktail.svg);
+  mask-image: url(icons/fi-rr-cocktail.svg);
+}
+
+.dahlia-fi-rr-coffee {
+  -webkit-mask-image: url(icons/fi-rr-coffee.svg);
+  mask-image: url(icons/fi-rr-coffee.svg);
+}
+
+.dahlia-fi-rr-comment-alt {
+  -webkit-mask-image: url(icons/fi-rr-comment-alt.svg);
+  mask-image: url(icons/fi-rr-comment-alt.svg);
+}
+
+.dahlia-fi-rr-comment-check {
+  -webkit-mask-image: url(icons/fi-rr-comment-check.svg);
+  mask-image: url(icons/fi-rr-comment-check.svg);
+}
+
+.dahlia-fi-rr-comment-heart {
+  -webkit-mask-image: url(icons/fi-rr-comment-heart.svg);
+  mask-image: url(icons/fi-rr-comment-heart.svg);
+}
+
+.dahlia-fi-rr-comment-info {
+  -webkit-mask-image: url(icons/fi-rr-comment-info.svg);
+  mask-image: url(icons/fi-rr-comment-info.svg);
+}
+
+.dahlia-fi-rr-comment-user {
+  -webkit-mask-image: url(icons/fi-rr-comment-user.svg);
+  mask-image: url(icons/fi-rr-comment-user.svg);
+}
+
+.dahlia-fi-rr-comment {
+  -webkit-mask-image: url(icons/fi-rr-comment.svg);
+  mask-image: url(icons/fi-rr-comment.svg);
+}
+
+.dahlia-fi-rr-comments {
+  -webkit-mask-image: url(icons/fi-rr-comments.svg);
+  mask-image: url(icons/fi-rr-comments.svg);
+}
+
+.dahlia-fi-rr-compress-alt {
+  -webkit-mask-image: url(icons/fi-rr-compress-alt.svg);
+  mask-image: url(icons/fi-rr-compress-alt.svg);
+}
+
+.dahlia-fi-rr-compress {
+  -webkit-mask-image: url(icons/fi-rr-compress.svg);
+  mask-image: url(icons/fi-rr-compress.svg);
+}
+
+.dahlia-fi-rr-computer {
+  -webkit-mask-image: url(icons/fi-rr-computer.svg);
+  mask-image: url(icons/fi-rr-computer.svg);
+}
+
+.dahlia-fi-rr-confetti {
+  -webkit-mask-image: url(icons/fi-rr-confetti.svg);
+  mask-image: url(icons/fi-rr-confetti.svg);
+}
+
+.dahlia-fi-rr-cookie {
+  -webkit-mask-image: url(icons/fi-rr-cookie.svg);
+  mask-image: url(icons/fi-rr-cookie.svg);
+}
+
+.dahlia-fi-rr-copy-alt {
+  -webkit-mask-image: url(icons/fi-rr-copy-alt.svg);
+  mask-image: url(icons/fi-rr-copy-alt.svg);
+}
+
+.dahlia-fi-rr-copy {
+  -webkit-mask-image: url(icons/fi-rr-copy.svg);
+  mask-image: url(icons/fi-rr-copy.svg);
+}
+
+.dahlia-fi-rr-copyright {
+  -webkit-mask-image: url(icons/fi-rr-copyright.svg);
+  mask-image: url(icons/fi-rr-copyright.svg);
+}
+
+.dahlia-fi-rr-cow {
+  -webkit-mask-image: url(icons/fi-rr-cow.svg);
+  mask-image: url(icons/fi-rr-cow.svg);
+}
+
+.dahlia-fi-rr-cream {
+  -webkit-mask-image: url(icons/fi-rr-cream.svg);
+  mask-image: url(icons/fi-rr-cream.svg);
+}
+
+.dahlia-fi-rr-credit-card {
+  -webkit-mask-image: url(icons/fi-rr-credit-card.svg);
+  mask-image: url(icons/fi-rr-credit-card.svg);
+}
+
+.dahlia-fi-rr-croissant {
+  -webkit-mask-image: url(icons/fi-rr-croissant.svg);
+  mask-image: url(icons/fi-rr-croissant.svg);
+}
+
+.dahlia-fi-rr-cross-circle {
+  -webkit-mask-image: url(icons/fi-rr-cross-circle.svg);
+  mask-image: url(icons/fi-rr-cross-circle.svg);
+}
+
+.dahlia-fi-rr-cross-small {
+  -webkit-mask-image: url(icons/fi-rr-cross-small.svg);
+  mask-image: url(icons/fi-rr-cross-small.svg);
+}
+
+.dahlia-fi-rr-cross {
+  -webkit-mask-image: url(icons/fi-rr-cross.svg);
+  mask-image: url(icons/fi-rr-cross.svg);
+}
+
+.dahlia-fi-rr-crown {
+  -webkit-mask-image: url(icons/fi-rr-crown.svg);
+  mask-image: url(icons/fi-rr-crown.svg);
+}
+
+.dahlia-fi-rr-cube {
+  -webkit-mask-image: url(icons/fi-rr-cube.svg);
+  mask-image: url(icons/fi-rr-cube.svg);
+}
+
+.dahlia-fi-rr-cupcake {
+  -webkit-mask-image: url(icons/fi-rr-cupcake.svg);
+  mask-image: url(icons/fi-rr-cupcake.svg);
+}
+
+.dahlia-fi-rr-cursor-finger {
+  -webkit-mask-image: url(icons/fi-rr-cursor-finger.svg);
+  mask-image: url(icons/fi-rr-cursor-finger.svg);
+}
+
+.dahlia-fi-rr-cursor-plus {
+  -webkit-mask-image: url(icons/fi-rr-cursor-plus.svg);
+  mask-image: url(icons/fi-rr-cursor-plus.svg);
+}
+
+.dahlia-fi-rr-cursor-text-alt {
+  -webkit-mask-image: url(icons/fi-rr-cursor-text-alt.svg);
+  mask-image: url(icons/fi-rr-cursor-text-alt.svg);
+}
+
+.dahlia-fi-rr-cursor-text {
+  -webkit-mask-image: url(icons/fi-rr-cursor-text.svg);
+  mask-image: url(icons/fi-rr-cursor-text.svg);
+}
+
+.dahlia-fi-rr-cursor {
+  -webkit-mask-image: url(icons/fi-rr-cursor.svg);
+  mask-image: url(icons/fi-rr-cursor.svg);
+}
+
+.dahlia-fi-rr-dart {
+  -webkit-mask-image: url(icons/fi-rr-dart.svg);
+  mask-image: url(icons/fi-rr-dart.svg);
+}
+
+.dahlia-fi-rr-dashboard {
+  -webkit-mask-image: url(icons/fi-rr-dashboard.svg);
+  mask-image: url(icons/fi-rr-dashboard.svg);
+}
+
+.dahlia-fi-rr-data-transfer {
+  -webkit-mask-image: url(icons/fi-rr-data-transfer.svg);
+  mask-image: url(icons/fi-rr-data-transfer.svg);
+}
+
+.dahlia-fi-rr-database {
+  -webkit-mask-image: url(icons/fi-rr-database.svg);
+  mask-image: url(icons/fi-rr-database.svg);
+}
+
+.dahlia-fi-rr-delete {
+  -webkit-mask-image: url(icons/fi-rr-delete.svg);
+  mask-image: url(icons/fi-rr-delete.svg);
+}
+
+.dahlia-fi-rr-diamond {
+  -webkit-mask-image: url(icons/fi-rr-diamond.svg);
+  mask-image: url(icons/fi-rr-diamond.svg);
+}
+
+.dahlia-fi-rr-dice {
+  -webkit-mask-image: url(icons/fi-rr-dice.svg);
+  mask-image: url(icons/fi-rr-dice.svg);
+}
+
+.dahlia-fi-rr-diploma {
+  -webkit-mask-image: url(icons/fi-rr-diploma.svg);
+  mask-image: url(icons/fi-rr-diploma.svg);
+}
+
+.dahlia-fi-rr-disco-ball {
+  -webkit-mask-image: url(icons/fi-rr-disco-ball.svg);
+  mask-image: url(icons/fi-rr-disco-ball.svg);
+}
+
+.dahlia-fi-rr-disk {
+  -webkit-mask-image: url(icons/fi-rr-disk.svg);
+  mask-image: url(icons/fi-rr-disk.svg);
+}
+
+.dahlia-fi-rr-doctor {
+  -webkit-mask-image: url(icons/fi-rr-doctor.svg);
+  mask-image: url(icons/fi-rr-doctor.svg);
+}
+
+.dahlia-fi-rr-document-signed {
+  -webkit-mask-image: url(icons/fi-rr-document-signed.svg);
+  mask-image: url(icons/fi-rr-document-signed.svg);
+}
+
+.dahlia-fi-rr-document {
+  -webkit-mask-image: url(icons/fi-rr-document.svg);
+  mask-image: url(icons/fi-rr-document.svg);
+}
+
+.dahlia-fi-rr-dollar {
+  -webkit-mask-image: url(icons/fi-rr-dollar.svg);
+  mask-image: url(icons/fi-rr-dollar.svg);
+}
+
+.dahlia-fi-rr-download {
+  -webkit-mask-image: url(icons/fi-rr-download.svg);
+  mask-image: url(icons/fi-rr-download.svg);
+}
+
+.dahlia-fi-rr-drink-alt {
+  -webkit-mask-image: url(icons/fi-rr-drink-alt.svg);
+  mask-image: url(icons/fi-rr-drink-alt.svg);
+}
+
+.dahlia-fi-rr-drumstick {
+  -webkit-mask-image: url(icons/fi-rr-drumstick.svg);
+  mask-image: url(icons/fi-rr-drumstick.svg);
+}
+
+.dahlia-fi-rr-duplicate {
+  -webkit-mask-image: url(icons/fi-rr-duplicate.svg);
+  mask-image: url(icons/fi-rr-duplicate.svg);
+}
+
+.dahlia-fi-rr-e-learning {
+  -webkit-mask-image: url(icons/fi-rr-e-learning.svg);
+  mask-image: url(icons/fi-rr-e-learning.svg);
+}
+
+.dahlia-fi-rr-earnings {
+  -webkit-mask-image: url(icons/fi-rr-earnings.svg);
+  mask-image: url(icons/fi-rr-earnings.svg);
+}
+
+.dahlia-fi-rr-edit-alt {
+  -webkit-mask-image: url(icons/fi-rr-edit-alt.svg);
+  mask-image: url(icons/fi-rr-edit-alt.svg);
+}
+
+.dahlia-fi-rr-edit {
+  -webkit-mask-image: url(icons/fi-rr-edit.svg);
+  mask-image: url(icons/fi-rr-edit.svg);
+}
+
+.dahlia-fi-rr-envelope-ban {
+  -webkit-mask-image: url(icons/fi-rr-envelope-ban.svg);
+  mask-image: url(icons/fi-rr-envelope-ban.svg);
+}
+
+.dahlia-fi-rr-envelope-download {
+  -webkit-mask-image: url(icons/fi-rr-envelope-download.svg);
+  mask-image: url(icons/fi-rr-envelope-download.svg);
+}
+
+.dahlia-fi-rr-envelope-marker {
+  -webkit-mask-image: url(icons/fi-rr-envelope-marker.svg);
+  mask-image: url(icons/fi-rr-envelope-marker.svg);
+}
+
+.dahlia-fi-rr-envelope-open {
+  -webkit-mask-image: url(icons/fi-rr-envelope-open.svg);
+  mask-image: url(icons/fi-rr-envelope-open.svg);
+}
+
+.dahlia-fi-rr-envelope-plus {
+  -webkit-mask-image: url(icons/fi-rr-envelope-plus.svg);
+  mask-image: url(icons/fi-rr-envelope-plus.svg);
+}
+
+.dahlia-fi-rr-envelope {
+  -webkit-mask-image: url(icons/fi-rr-envelope.svg);
+  mask-image: url(icons/fi-rr-envelope.svg);
+}
+
+.dahlia-fi-rr-euro {
+  -webkit-mask-image: url(icons/fi-rr-euro.svg);
+  mask-image: url(icons/fi-rr-euro.svg);
+}
+
+.dahlia-fi-rr-exclamation {
+  -webkit-mask-image: url(icons/fi-rr-exclamation.svg);
+  mask-image: url(icons/fi-rr-exclamation.svg);
+}
+
+.dahlia-fi-rr-expand {
+  -webkit-mask-image: url(icons/fi-rr-expand.svg);
+  mask-image: url(icons/fi-rr-expand.svg);
+}
+
+.dahlia-fi-rr-eye-crossed {
+  -webkit-mask-image: url(icons/fi-rr-eye-crossed.svg);
+  mask-image: url(icons/fi-rr-eye-crossed.svg);
+}
+
+.dahlia-fi-rr-eye-dropper {
+  -webkit-mask-image: url(icons/fi-rr-eye-dropper.svg);
+  mask-image: url(icons/fi-rr-eye-dropper.svg);
+}
+
+.dahlia-fi-rr-eye {
+  -webkit-mask-image: url(icons/fi-rr-eye.svg);
+  mask-image: url(icons/fi-rr-eye.svg);
+}
+
+.dahlia-fi-rr-feather {
+  -webkit-mask-image: url(icons/fi-rr-feather.svg);
+  mask-image: url(icons/fi-rr-feather.svg);
+}
+
+.dahlia-fi-rr-ferris-wheel {
+  -webkit-mask-image: url(icons/fi-rr-ferris-wheel.svg);
+  mask-image: url(icons/fi-rr-ferris-wheel.svg);
+}
+
+.dahlia-fi-rr-file-add {
+  -webkit-mask-image: url(icons/fi-rr-file-add.svg);
+  mask-image: url(icons/fi-rr-file-add.svg);
+}
+
+.dahlia-fi-rr-file-ai {
+  -webkit-mask-image: url(icons/fi-rr-file-ai.svg);
+  mask-image: url(icons/fi-rr-file-ai.svg);
+}
+
+.dahlia-fi-rr-file-check {
+  -webkit-mask-image: url(icons/fi-rr-file-check.svg);
+  mask-image: url(icons/fi-rr-file-check.svg);
+}
+
+.dahlia-fi-rr-file-delete {
+  -webkit-mask-image: url(icons/fi-rr-file-delete.svg);
+  mask-image: url(icons/fi-rr-file-delete.svg);
+}
+
+.dahlia-fi-rr-file-eps {
+  -webkit-mask-image: url(icons/fi-rr-file-eps.svg);
+  mask-image: url(icons/fi-rr-file-eps.svg);
+}
+
+.dahlia-fi-rr-file-gif {
+  -webkit-mask-image: url(icons/fi-rr-file-gif.svg);
+  mask-image: url(icons/fi-rr-file-gif.svg);
+}
+
+.dahlia-fi-rr-file-music {
+  -webkit-mask-image: url(icons/fi-rr-file-music.svg);
+  mask-image: url(icons/fi-rr-file-music.svg);
+}
+
+.dahlia-fi-rr-file-psd {
+  -webkit-mask-image: url(icons/fi-rr-file-psd.svg);
+  mask-image: url(icons/fi-rr-file-psd.svg);
+}
+
+.dahlia-fi-rr-file {
+  -webkit-mask-image: url(icons/fi-rr-file.svg);
+  mask-image: url(icons/fi-rr-file.svg);
+}
+
+.dahlia-fi-rr-fill {
+  -webkit-mask-image: url(icons/fi-rr-fill.svg);
+  mask-image: url(icons/fi-rr-fill.svg);
+}
+
+.dahlia-fi-rr-film {
+  -webkit-mask-image: url(icons/fi-rr-film.svg);
+  mask-image: url(icons/fi-rr-film.svg);
+}
+
+.dahlia-fi-rr-filter {
+  -webkit-mask-image: url(icons/fi-rr-filter.svg);
+  mask-image: url(icons/fi-rr-filter.svg);
+}
+
+.dahlia-fi-rr-fingerprint {
+  -webkit-mask-image: url(icons/fi-rr-fingerprint.svg);
+  mask-image: url(icons/fi-rr-fingerprint.svg);
+}
+
+.dahlia-fi-rr-fish {
+  -webkit-mask-image: url(icons/fi-rr-fish.svg);
+  mask-image: url(icons/fi-rr-fish.svg);
+}
+
+.dahlia-fi-rr-flag {
+  -webkit-mask-image: url(icons/fi-rr-flag.svg);
+  mask-image: url(icons/fi-rr-flag.svg);
+}
+
+.dahlia-fi-rr-flame {
+  -webkit-mask-image: url(icons/fi-rr-flame.svg);
+  mask-image: url(icons/fi-rr-flame.svg);
+}
+
+.dahlia-fi-rr-flip-horizontal {
+  -webkit-mask-image: url(icons/fi-rr-flip-horizontal.svg);
+  mask-image: url(icons/fi-rr-flip-horizontal.svg);
+}
+
+.dahlia-fi-rr-flower-bouquet {
+  -webkit-mask-image: url(icons/fi-rr-flower-bouquet.svg);
+  mask-image: url(icons/fi-rr-flower-bouquet.svg);
+}
+
+.dahlia-fi-rr-flower-tulip {
+  -webkit-mask-image: url(icons/fi-rr-flower-tulip.svg);
+  mask-image: url(icons/fi-rr-flower-tulip.svg);
+}
+
+.dahlia-fi-rr-flower {
+  -webkit-mask-image: url(icons/fi-rr-flower.svg);
+  mask-image: url(icons/fi-rr-flower.svg);
+}
+
+.dahlia-fi-rr-folder-add {
+  -webkit-mask-image: url(icons/fi-rr-folder-add.svg);
+  mask-image: url(icons/fi-rr-folder-add.svg);
+}
+
+.dahlia-fi-rr-folder {
+  -webkit-mask-image: url(icons/fi-rr-folder.svg);
+  mask-image: url(icons/fi-rr-folder.svg);
+}
+
+.dahlia-fi-rr-following {
+  -webkit-mask-image: url(icons/fi-rr-following.svg);
+  mask-image: url(icons/fi-rr-following.svg);
+}
+
+.dahlia-fi-rr-football {
+  -webkit-mask-image: url(icons/fi-rr-football.svg);
+  mask-image: url(icons/fi-rr-football.svg);
+}
+
+.dahlia-fi-rr-form {
+  -webkit-mask-image: url(icons/fi-rr-form.svg);
+  mask-image: url(icons/fi-rr-form.svg);
+}
+
+.dahlia-fi-rr-forward {
+  -webkit-mask-image: url(icons/fi-rr-forward.svg);
+  mask-image: url(icons/fi-rr-forward.svg);
+}
+
+.dahlia-fi-rr-fox {
+  -webkit-mask-image: url(icons/fi-rr-fox.svg);
+  mask-image: url(icons/fi-rr-fox.svg);
+}
+
+.dahlia-fi-rr-frown {
+  -webkit-mask-image: url(icons/fi-rr-frown.svg);
+  mask-image: url(icons/fi-rr-frown.svg);
+}
+
+.dahlia-fi-rr-ftp {
+  -webkit-mask-image: url(icons/fi-rr-ftp.svg);
+  mask-image: url(icons/fi-rr-ftp.svg);
+}
+
+.dahlia-fi-rr-gallery {
+  -webkit-mask-image: url(icons/fi-rr-gallery.svg);
+  mask-image: url(icons/fi-rr-gallery.svg);
+}
+
+.dahlia-fi-rr-gamepad {
+  -webkit-mask-image: url(icons/fi-rr-gamepad.svg);
+  mask-image: url(icons/fi-rr-gamepad.svg);
+}
+
+.dahlia-fi-rr-gas-pump {
+  -webkit-mask-image: url(icons/fi-rr-gas-pump.svg);
+  mask-image: url(icons/fi-rr-gas-pump.svg);
+}
+
+.dahlia-fi-rr-gem {
+  -webkit-mask-image: url(icons/fi-rr-gem.svg);
+  mask-image: url(icons/fi-rr-gem.svg);
+}
+
+.dahlia-fi-rr-gift {
+  -webkit-mask-image: url(icons/fi-rr-gift.svg);
+  mask-image: url(icons/fi-rr-gift.svg);
+}
+
+.dahlia-fi-rr-glass-cheers {
+  -webkit-mask-image: url(icons/fi-rr-glass-cheers.svg);
+  mask-image: url(icons/fi-rr-glass-cheers.svg);
+}
+
+.dahlia-fi-rr-glasses {
+  -webkit-mask-image: url(icons/fi-rr-glasses.svg);
+  mask-image: url(icons/fi-rr-glasses.svg);
+}
+
+.dahlia-fi-rr-globe-alt {
+  -webkit-mask-image: url(icons/fi-rr-globe-alt.svg);
+  mask-image: url(icons/fi-rr-globe-alt.svg);
+}
+
+.dahlia-fi-rr-globe {
+  -webkit-mask-image: url(icons/fi-rr-globe.svg);
+  mask-image: url(icons/fi-rr-globe.svg);
+}
+
+.dahlia-fi-rr-golf {
+  -webkit-mask-image: url(icons/fi-rr-golf.svg);
+  mask-image: url(icons/fi-rr-golf.svg);
+}
+
+.dahlia-fi-rr-graduation-cap {
+  -webkit-mask-image: url(icons/fi-rr-graduation-cap.svg);
+  mask-image: url(icons/fi-rr-graduation-cap.svg);
+}
+
+.dahlia-fi-rr-graphic-tablet {
+  -webkit-mask-image: url(icons/fi-rr-graphic-tablet.svg);
+  mask-image: url(icons/fi-rr-graphic-tablet.svg);
+}
+
+.dahlia-fi-rr-grid-alt {
+  -webkit-mask-image: url(icons/fi-rr-grid-alt.svg);
+  mask-image: url(icons/fi-rr-grid-alt.svg);
+}
+
+.dahlia-fi-rr-grid {
+  -webkit-mask-image: url(icons/fi-rr-grid.svg);
+  mask-image: url(icons/fi-rr-grid.svg);
+}
+
+.dahlia-fi-rr-guitar {
+  -webkit-mask-image: url(icons/fi-rr-guitar.svg);
+  mask-image: url(icons/fi-rr-guitar.svg);
+}
+
+.dahlia-fi-rr-gym {
+  -webkit-mask-image: url(icons/fi-rr-gym.svg);
+  mask-image: url(icons/fi-rr-gym.svg);
+}
+
+.dahlia-fi-rr-hamburger {
+  -webkit-mask-image: url(icons/fi-rr-hamburger.svg);
+  mask-image: url(icons/fi-rr-hamburger.svg);
+}
+
+.dahlia-fi-rr-hand-holding-heart {
+  -webkit-mask-image: url(icons/fi-rr-hand-holding-heart.svg);
+  mask-image: url(icons/fi-rr-hand-holding-heart.svg);
+}
+
+.dahlia-fi-rr-hastag {
+  -webkit-mask-image: url(icons/fi-rr-hastag.svg);
+  mask-image: url(icons/fi-rr-hastag.svg);
+}
+
+.dahlia-fi-rr-hat-birthday {
+  -webkit-mask-image: url(icons/fi-rr-hat-birthday.svg);
+  mask-image: url(icons/fi-rr-hat-birthday.svg);
+}
+
+.dahlia-fi-rr-head-side-thinking {
+  -webkit-mask-image: url(icons/fi-rr-head-side-thinking.svg);
+  mask-image: url(icons/fi-rr-head-side-thinking.svg);
+}
+
+.dahlia-fi-rr-headphones {
+  -webkit-mask-image: url(icons/fi-rr-headphones.svg);
+  mask-image: url(icons/fi-rr-headphones.svg);
+}
+
+.dahlia-fi-rr-headset {
+  -webkit-mask-image: url(icons/fi-rr-headset.svg);
+  mask-image: url(icons/fi-rr-headset.svg);
+}
+
+.dahlia-fi-rr-heart-arrow {
+  -webkit-mask-image: url(icons/fi-rr-heart-arrow.svg);
+  mask-image: url(icons/fi-rr-heart-arrow.svg);
+}
+
+.dahlia-fi-rr-heart {
+  -webkit-mask-image: url(icons/fi-rr-heart.svg);
+  mask-image: url(icons/fi-rr-heart.svg);
+}
+
+.dahlia-fi-rr-home-location-alt {
+  -webkit-mask-image: url(icons/fi-rr-home-location-alt.svg);
+  mask-image: url(icons/fi-rr-home-location-alt.svg);
+}
+
+.dahlia-fi-rr-home-location {
+  -webkit-mask-image: url(icons/fi-rr-home-location.svg);
+  mask-image: url(icons/fi-rr-home-location.svg);
+}
+
+.dahlia-fi-rr-home {
+  -webkit-mask-image: url(icons/fi-rr-home.svg);
+  mask-image: url(icons/fi-rr-home.svg);
+}
+
+.dahlia-fi-rr-hourglass-end {
+  -webkit-mask-image: url(icons/fi-rr-hourglass-end.svg);
+  mask-image: url(icons/fi-rr-hourglass-end.svg);
+}
+
+.dahlia-fi-rr-hourglass {
+  -webkit-mask-image: url(icons/fi-rr-hourglass.svg);
+  mask-image: url(icons/fi-rr-hourglass.svg);
+}
+
+.dahlia-fi-rr-ice-cream {
+  -webkit-mask-image: url(icons/fi-rr-ice-cream.svg);
+  mask-image: url(icons/fi-rr-ice-cream.svg);
+}
+
+.dahlia-fi-rr-ice-skate {
+  -webkit-mask-image: url(icons/fi-rr-ice-skate.svg);
+  mask-image: url(icons/fi-rr-ice-skate.svg);
+}
+
+.dahlia-fi-rr-id-badge {
+  -webkit-mask-image: url(icons/fi-rr-id-badge.svg);
+  mask-image: url(icons/fi-rr-id-badge.svg);
+}
+
+.dahlia-fi-rr-inbox {
+  -webkit-mask-image: url(icons/fi-rr-inbox.svg);
+  mask-image: url(icons/fi-rr-inbox.svg);
+}
+
+.dahlia-fi-rr-incognito {
+  -webkit-mask-image: url(icons/fi-rr-incognito.svg);
+  mask-image: url(icons/fi-rr-incognito.svg);
+}
+
+.dahlia-fi-rr-indent {
+  -webkit-mask-image: url(icons/fi-rr-indent.svg);
+  mask-image: url(icons/fi-rr-indent.svg);
+}
+
+.dahlia-fi-rr-infinity {
+  -webkit-mask-image: url(icons/fi-rr-infinity.svg);
+  mask-image: url(icons/fi-rr-infinity.svg);
+}
+
+.dahlia-fi-rr-info {
+  -webkit-mask-image: url(icons/fi-rr-info.svg);
+  mask-image: url(icons/fi-rr-info.svg);
+}
+
+.dahlia-fi-rr-interactive {
+  -webkit-mask-image: url(icons/fi-rr-interactive.svg);
+  mask-image: url(icons/fi-rr-interactive.svg);
+}
+
+.dahlia-fi-rr-interlining {
+  -webkit-mask-image: url(icons/fi-rr-interlining.svg);
+  mask-image: url(icons/fi-rr-interlining.svg);
+}
+
+.dahlia-fi-rr-interrogation {
+  -webkit-mask-image: url(icons/fi-rr-interrogation.svg);
+  mask-image: url(icons/fi-rr-interrogation.svg);
+}
+
+.dahlia-fi-rr-italic {
+  -webkit-mask-image: url(icons/fi-rr-italic.svg);
+  mask-image: url(icons/fi-rr-italic.svg);
+}
+
+.dahlia-fi-rr-jpg {
+  -webkit-mask-image: url(icons/fi-rr-jpg.svg);
+  mask-image: url(icons/fi-rr-jpg.svg);
+}
+
+.dahlia-fi-rr-key {
+  -webkit-mask-image: url(icons/fi-rr-key.svg);
+  mask-image: url(icons/fi-rr-key.svg);
+}
+
+.dahlia-fi-rr-keyboard {
+  -webkit-mask-image: url(icons/fi-rr-keyboard.svg);
+  mask-image: url(icons/fi-rr-keyboard.svg);
+}
+
+.dahlia-fi-rr-kite {
+  -webkit-mask-image: url(icons/fi-rr-kite.svg);
+  mask-image: url(icons/fi-rr-kite.svg);
+}
+
+.dahlia-fi-rr-label {
+  -webkit-mask-image: url(icons/fi-rr-label.svg);
+  mask-image: url(icons/fi-rr-label.svg);
+}
+
+.dahlia-fi-rr-laptop {
+  -webkit-mask-image: url(icons/fi-rr-laptop.svg);
+  mask-image: url(icons/fi-rr-laptop.svg);
+}
+
+.dahlia-fi-rr-lasso {
+  -webkit-mask-image: url(icons/fi-rr-lasso.svg);
+  mask-image: url(icons/fi-rr-lasso.svg);
+}
+
+.dahlia-fi-rr-laugh {
+  -webkit-mask-image: url(icons/fi-rr-laugh.svg);
+  mask-image: url(icons/fi-rr-laugh.svg);
+}
+
+.dahlia-fi-rr-layers {
+  -webkit-mask-image: url(icons/fi-rr-layers.svg);
+  mask-image: url(icons/fi-rr-layers.svg);
+}
+
+.dahlia-fi-rr-layout-fluid {
+  -webkit-mask-image: url(icons/fi-rr-layout-fluid.svg);
+  mask-image: url(icons/fi-rr-layout-fluid.svg);
+}
+
+.dahlia-fi-rr-leaf {
+  -webkit-mask-image: url(icons/fi-rr-leaf.svg);
+  mask-image: url(icons/fi-rr-leaf.svg);
+}
+
+.dahlia-fi-rr-letter-case {
+  -webkit-mask-image: url(icons/fi-rr-letter-case.svg);
+  mask-image: url(icons/fi-rr-letter-case.svg);
+}
+
+.dahlia-fi-rr-life-ring {
+  -webkit-mask-image: url(icons/fi-rr-life-ring.svg);
+  mask-image: url(icons/fi-rr-life-ring.svg);
+}
+
+.dahlia-fi-rr-line-width {
+  -webkit-mask-image: url(icons/fi-rr-line-width.svg);
+  mask-image: url(icons/fi-rr-line-width.svg);
+}
+
+.dahlia-fi-rr-link {
+  -webkit-mask-image: url(icons/fi-rr-link.svg);
+  mask-image: url(icons/fi-rr-link.svg);
+}
+
+.dahlia-fi-rr-lipstick {
+  -webkit-mask-image: url(icons/fi-rr-lipstick.svg);
+  mask-image: url(icons/fi-rr-lipstick.svg);
+}
+
+.dahlia-fi-rr-list-check {
+  -webkit-mask-image: url(icons/fi-rr-list-check.svg);
+  mask-image: url(icons/fi-rr-list-check.svg);
+}
+
+.dahlia-fi-rr-list {
+  -webkit-mask-image: url(icons/fi-rr-list.svg);
+  mask-image: url(icons/fi-rr-list.svg);
+}
+
+.dahlia-fi-rr-location-alt {
+  -webkit-mask-image: url(icons/fi-rr-location-alt.svg);
+  mask-image: url(icons/fi-rr-location-alt.svg);
+}
+
+.dahlia-fi-rr-lock-alt {
+  -webkit-mask-image: url(icons/fi-rr-lock-alt.svg);
+  mask-image: url(icons/fi-rr-lock-alt.svg);
+}
+
+.dahlia-fi-rr-lock {
+  -webkit-mask-image: url(icons/fi-rr-lock.svg);
+  mask-image: url(icons/fi-rr-lock.svg);
+}
+
+.dahlia-fi-rr-luggage-rolling {
+  -webkit-mask-image: url(icons/fi-rr-luggage-rolling.svg);
+  mask-image: url(icons/fi-rr-luggage-rolling.svg);
+}
+
+.dahlia-fi-rr-magic-wand {
+  -webkit-mask-image: url(icons/fi-rr-magic-wand.svg);
+  mask-image: url(icons/fi-rr-magic-wand.svg);
+}
+
+.dahlia-fi-rr-makeup-brush {
+  -webkit-mask-image: url(icons/fi-rr-makeup-brush.svg);
+  mask-image: url(icons/fi-rr-makeup-brush.svg);
+}
+
+.dahlia-fi-rr-man-head {
+  -webkit-mask-image: url(icons/fi-rr-man-head.svg);
+  mask-image: url(icons/fi-rr-man-head.svg);
+}
+
+.dahlia-fi-rr-map-marker-cross {
+  -webkit-mask-image: url(icons/fi-rr-map-marker-cross.svg);
+  mask-image: url(icons/fi-rr-map-marker-cross.svg);
+}
+
+.dahlia-fi-rr-map-marker-home {
+  -webkit-mask-image: url(icons/fi-rr-map-marker-home.svg);
+  mask-image: url(icons/fi-rr-map-marker-home.svg);
+}
+
+.dahlia-fi-rr-map-marker-minus {
+  -webkit-mask-image: url(icons/fi-rr-map-marker-minus.svg);
+  mask-image: url(icons/fi-rr-map-marker-minus.svg);
+}
+
+.dahlia-fi-rr-map-marker-plus {
+  -webkit-mask-image: url(icons/fi-rr-map-marker-plus.svg);
+  mask-image: url(icons/fi-rr-map-marker-plus.svg);
+}
+
+.dahlia-fi-rr-map-marker {
+  -webkit-mask-image: url(icons/fi-rr-map-marker.svg);
+  mask-image: url(icons/fi-rr-map-marker.svg);
+}
+
+.dahlia-fi-rr-map {
+  -webkit-mask-image: url(icons/fi-rr-map.svg);
+  mask-image: url(icons/fi-rr-map.svg);
+}
+
+.dahlia-fi-rr-marker-time {
+  -webkit-mask-image: url(icons/fi-rr-marker-time.svg);
+  mask-image: url(icons/fi-rr-marker-time.svg);
+}
+
+.dahlia-fi-rr-marker {
+  -webkit-mask-image: url(icons/fi-rr-marker.svg);
+  mask-image: url(icons/fi-rr-marker.svg);
+}
+
+.dahlia-fi-rr-mars-double {
+  -webkit-mask-image: url(icons/fi-rr-mars-double.svg);
+  mask-image: url(icons/fi-rr-mars-double.svg);
+}
+
+.dahlia-fi-rr-mars {
+  -webkit-mask-image: url(icons/fi-rr-mars.svg);
+  mask-image: url(icons/fi-rr-mars.svg);
+}
+
+.dahlia-fi-rr-mask-carnival {
+  -webkit-mask-image: url(icons/fi-rr-mask-carnival.svg);
+  mask-image: url(icons/fi-rr-mask-carnival.svg);
+}
+
+.dahlia-fi-rr-medicine {
+  -webkit-mask-image: url(icons/fi-rr-medicine.svg);
+  mask-image: url(icons/fi-rr-medicine.svg);
+}
+
+.dahlia-fi-rr-megaphone {
+  -webkit-mask-image: url(icons/fi-rr-megaphone.svg);
+  mask-image: url(icons/fi-rr-megaphone.svg);
+}
+
+.dahlia-fi-rr-meh {
+  -webkit-mask-image: url(icons/fi-rr-meh.svg);
+  mask-image: url(icons/fi-rr-meh.svg);
+}
+
+.dahlia-fi-rr-menu-burger {
+  -webkit-mask-image: url(icons/fi-rr-menu-burger.svg);
+  mask-image: url(icons/fi-rr-menu-burger.svg);
+}
+
+.dahlia-fi-rr-menu-dots-vertical {
+  -webkit-mask-image: url(icons/fi-rr-menu-dots-vertical.svg);
+  mask-image: url(icons/fi-rr-menu-dots-vertical.svg);
+}
+
+.dahlia-fi-rr-menu-dots {
+  -webkit-mask-image: url(icons/fi-rr-menu-dots.svg);
+  mask-image: url(icons/fi-rr-menu-dots.svg);
+}
+
+.dahlia-fi-rr-microphone-alt {
+  -webkit-mask-image: url(icons/fi-rr-microphone-alt.svg);
+  mask-image: url(icons/fi-rr-microphone-alt.svg);
+}
+
+.dahlia-fi-rr-microphone {
+  -webkit-mask-image: url(icons/fi-rr-microphone.svg);
+  mask-image: url(icons/fi-rr-microphone.svg);
+}
+
+.dahlia-fi-rr-minus-small {
+  -webkit-mask-image: url(icons/fi-rr-minus-small.svg);
+  mask-image: url(icons/fi-rr-minus-small.svg);
+}
+
+.dahlia-fi-rr-minus {
+  -webkit-mask-image: url(icons/fi-rr-minus.svg);
+  mask-image: url(icons/fi-rr-minus.svg);
+}
+
+.dahlia-fi-rr-mobile {
+  -webkit-mask-image: url(icons/fi-rr-mobile.svg);
+  mask-image: url(icons/fi-rr-mobile.svg);
+}
+
+.dahlia-fi-rr-mode-landscape {
+  -webkit-mask-image: url(icons/fi-rr-mode-landscape.svg);
+  mask-image: url(icons/fi-rr-mode-landscape.svg);
+}
+
+.dahlia-fi-rr-mode-portrait {
+  -webkit-mask-image: url(icons/fi-rr-mode-portrait.svg);
+  mask-image: url(icons/fi-rr-mode-portrait.svg);
+}
+
+.dahlia-fi-rr-money {
+  -webkit-mask-image: url(icons/fi-rr-money.svg);
+  mask-image: url(icons/fi-rr-money.svg);
+}
+
+.dahlia-fi-rr-moon {
+  -webkit-mask-image: url(icons/fi-rr-moon.svg);
+  mask-image: url(icons/fi-rr-moon.svg);
+}
+
+.dahlia-fi-rr-mountains {
+  -webkit-mask-image: url(icons/fi-rr-mountains.svg);
+  mask-image: url(icons/fi-rr-mountains.svg);
+}
+
+.dahlia-fi-rr-mouse {
+  -webkit-mask-image: url(icons/fi-rr-mouse.svg);
+  mask-image: url(icons/fi-rr-mouse.svg);
+}
+
+.dahlia-fi-rr-mug-alt {
+  -webkit-mask-image: url(icons/fi-rr-mug-alt.svg);
+  mask-image: url(icons/fi-rr-mug-alt.svg);
+}
+
+.dahlia-fi-rr-music-alt {
+  -webkit-mask-image: url(icons/fi-rr-music-alt.svg);
+  mask-image: url(icons/fi-rr-music-alt.svg);
+}
+
+.dahlia-fi-rr-music {
+  -webkit-mask-image: url(icons/fi-rr-music.svg);
+  mask-image: url(icons/fi-rr-music.svg);
+}
+
+.dahlia-fi-rr-navigation {
+  -webkit-mask-image: url(icons/fi-rr-navigation.svg);
+  mask-image: url(icons/fi-rr-navigation.svg);
+}
+
+.dahlia-fi-rr-network-cloud {
+  -webkit-mask-image: url(icons/fi-rr-network-cloud.svg);
+  mask-image: url(icons/fi-rr-network-cloud.svg);
+}
+
+.dahlia-fi-rr-network {
+  -webkit-mask-image: url(icons/fi-rr-network.svg);
+  mask-image: url(icons/fi-rr-network.svg);
+}
+
+.dahlia-fi-rr-notebook {
+  -webkit-mask-image: url(icons/fi-rr-notebook.svg);
+  mask-image: url(icons/fi-rr-notebook.svg);
+}
+
+.dahlia-fi-rr-opacity {
+  -webkit-mask-image: url(icons/fi-rr-opacity.svg);
+  mask-image: url(icons/fi-rr-opacity.svg);
+}
+
+.dahlia-fi-rr-package {
+  -webkit-mask-image: url(icons/fi-rr-package.svg);
+  mask-image: url(icons/fi-rr-package.svg);
+}
+
+.dahlia-fi-rr-paint-brush {
+  -webkit-mask-image: url(icons/fi-rr-paint-brush.svg);
+  mask-image: url(icons/fi-rr-paint-brush.svg);
+}
+
+.dahlia-fi-rr-palette {
+  -webkit-mask-image: url(icons/fi-rr-palette.svg);
+  mask-image: url(icons/fi-rr-palette.svg);
+}
+
+.dahlia-fi-rr-paper-plane {
+  -webkit-mask-image: url(icons/fi-rr-paper-plane.svg);
+  mask-image: url(icons/fi-rr-paper-plane.svg);
+}
+
+.dahlia-fi-rr-password {
+  -webkit-mask-image: url(icons/fi-rr-password.svg);
+  mask-image: url(icons/fi-rr-password.svg);
+}
+
+.dahlia-fi-rr-pause {
+  -webkit-mask-image: url(icons/fi-rr-pause.svg);
+  mask-image: url(icons/fi-rr-pause.svg);
+}
+
+.dahlia-fi-rr-paw {
+  -webkit-mask-image: url(icons/fi-rr-paw.svg);
+  mask-image: url(icons/fi-rr-paw.svg);
+}
+
+.dahlia-fi-rr-pencil {
+  -webkit-mask-image: url(icons/fi-rr-pencil.svg);
+  mask-image: url(icons/fi-rr-pencil.svg);
+}
+
+.dahlia-fi-rr-pharmacy {
+  -webkit-mask-image: url(icons/fi-rr-pharmacy.svg);
+  mask-image: url(icons/fi-rr-pharmacy.svg);
+}
+
+.dahlia-fi-rr-phone-call {
+  -webkit-mask-image: url(icons/fi-rr-phone-call.svg);
+  mask-image: url(icons/fi-rr-phone-call.svg);
+}
+
+.dahlia-fi-rr-phone-cross {
+  -webkit-mask-image: url(icons/fi-rr-phone-cross.svg);
+  mask-image: url(icons/fi-rr-phone-cross.svg);
+}
+
+.dahlia-fi-rr-phone-pause {
+  -webkit-mask-image: url(icons/fi-rr-phone-pause.svg);
+  mask-image: url(icons/fi-rr-phone-pause.svg);
+}
+
+.dahlia-fi-rr-phone-slash {
+  -webkit-mask-image: url(icons/fi-rr-phone-slash.svg);
+  mask-image: url(icons/fi-rr-phone-slash.svg);
+}
+
+.dahlia-fi-rr-physics {
+  -webkit-mask-image: url(icons/fi-rr-physics.svg);
+  mask-image: url(icons/fi-rr-physics.svg);
+}
+
+.dahlia-fi-rr-picture {
+  -webkit-mask-image: url(icons/fi-rr-picture.svg);
+  mask-image: url(icons/fi-rr-picture.svg);
+}
+
+.dahlia-fi-rr-ping-pong {
+  -webkit-mask-image: url(icons/fi-rr-ping-pong.svg);
+  mask-image: url(icons/fi-rr-ping-pong.svg);
+}
+
+.dahlia-fi-rr-pizza-slice {
+  -webkit-mask-image: url(icons/fi-rr-pizza-slice.svg);
+  mask-image: url(icons/fi-rr-pizza-slice.svg);
+}
+
+.dahlia-fi-rr-plane {
+  -webkit-mask-image: url(icons/fi-rr-plane.svg);
+  mask-image: url(icons/fi-rr-plane.svg);
+}
+
+.dahlia-fi-rr-play-alt {
+  -webkit-mask-image: url(icons/fi-rr-play-alt.svg);
+  mask-image: url(icons/fi-rr-play-alt.svg);
+}
+
+.dahlia-fi-rr-play {
+  -webkit-mask-image: url(icons/fi-rr-play.svg);
+  mask-image: url(icons/fi-rr-play.svg);
+}
+
+.dahlia-fi-rr-playing-cards {
+  -webkit-mask-image: url(icons/fi-rr-playing-cards.svg);
+  mask-image: url(icons/fi-rr-playing-cards.svg);
+}
+
+.dahlia-fi-rr-plus-small {
+  -webkit-mask-image: url(icons/fi-rr-plus-small.svg);
+  mask-image: url(icons/fi-rr-plus-small.svg);
+}
+
+.dahlia-fi-rr-plus {
+  -webkit-mask-image: url(icons/fi-rr-plus.svg);
+  mask-image: url(icons/fi-rr-plus.svg);
+}
+
+.dahlia-fi-rr-poker-chip {
+  -webkit-mask-image: url(icons/fi-rr-poker-chip.svg);
+  mask-image: url(icons/fi-rr-poker-chip.svg);
+}
+
+.dahlia-fi-rr-portrait {
+  -webkit-mask-image: url(icons/fi-rr-portrait.svg);
+  mask-image: url(icons/fi-rr-portrait.svg);
+}
+
+.dahlia-fi-rr-pound {
+  -webkit-mask-image: url(icons/fi-rr-pound.svg);
+  mask-image: url(icons/fi-rr-pound.svg);
+}
+
+.dahlia-fi-rr-power {
+  -webkit-mask-image: url(icons/fi-rr-power.svg);
+  mask-image: url(icons/fi-rr-power.svg);
+}
+
+.dahlia-fi-rr-presentation {
+  -webkit-mask-image: url(icons/fi-rr-presentation.svg);
+  mask-image: url(icons/fi-rr-presentation.svg);
+}
+
+.dahlia-fi-rr-print {
+  -webkit-mask-image: url(icons/fi-rr-print.svg);
+  mask-image: url(icons/fi-rr-print.svg);
+}
+
+.dahlia-fi-rr-protractor {
+  -webkit-mask-image: url(icons/fi-rr-protractor.svg);
+  mask-image: url(icons/fi-rr-protractor.svg);
+}
+
+.dahlia-fi-rr-pulse {
+  -webkit-mask-image: url(icons/fi-rr-pulse.svg);
+  mask-image: url(icons/fi-rr-pulse.svg);
+}
+
+.dahlia-fi-rr-pyramid {
+  -webkit-mask-image: url(icons/fi-rr-pyramid.svg);
+  mask-image: url(icons/fi-rr-pyramid.svg);
+}
+
+.dahlia-fi-rr-quote-right {
+  -webkit-mask-image: url(icons/fi-rr-quote-right.svg);
+  mask-image: url(icons/fi-rr-quote-right.svg);
+}
+
+.dahlia-fi-rr-rainbow {
+  -webkit-mask-image: url(icons/fi-rr-rainbow.svg);
+  mask-image: url(icons/fi-rr-rainbow.svg);
+}
+
+.dahlia-fi-rr-raindrops {
+  -webkit-mask-image: url(icons/fi-rr-raindrops.svg);
+  mask-image: url(icons/fi-rr-raindrops.svg);
+}
+
+.dahlia-fi-rr-rec {
+  -webkit-mask-image: url(icons/fi-rr-rec.svg);
+  mask-image: url(icons/fi-rr-rec.svg);
+}
+
+.dahlia-fi-rr-receipt {
+  -webkit-mask-image: url(icons/fi-rr-receipt.svg);
+  mask-image: url(icons/fi-rr-receipt.svg);
+}
+
+.dahlia-fi-rr-record-vinyl {
+  -webkit-mask-image: url(icons/fi-rr-record-vinyl.svg);
+  mask-image: url(icons/fi-rr-record-vinyl.svg);
+}
+
+.dahlia-fi-rr-rectabgle-vertical {
+  -webkit-mask-image: url(icons/fi-rr-rectabgle-vertical.svg);
+  mask-image: url(icons/fi-rr-rectabgle-vertical.svg);
+}
+
+.dahlia-fi-rr-rectangle-horizontal {
+  -webkit-mask-image: url(icons/fi-rr-rectangle-horizontal.svg);
+  mask-image: url(icons/fi-rr-rectangle-horizontal.svg);
+}
+
+.dahlia-fi-rr-rectangle-panoramic {
+  -webkit-mask-image: url(icons/fi-rr-rectangle-panoramic.svg);
+  mask-image: url(icons/fi-rr-rectangle-panoramic.svg);
+}
+
+.dahlia-fi-rr-recycle {
+  -webkit-mask-image: url(icons/fi-rr-recycle.svg);
+  mask-image: url(icons/fi-rr-recycle.svg);
+}
+
+.dahlia-fi-rr-redo-alt {
+  -webkit-mask-image: url(icons/fi-rr-redo-alt.svg);
+  mask-image: url(icons/fi-rr-redo-alt.svg);
+}
+
+.dahlia-fi-rr-redo {
+  -webkit-mask-image: url(icons/fi-rr-redo.svg);
+  mask-image: url(icons/fi-rr-redo.svg);
+}
+
+.dahlia-fi-rr-reflect {
+  -webkit-mask-image: url(icons/fi-rr-reflect.svg);
+  mask-image: url(icons/fi-rr-reflect.svg);
+}
+
+.dahlia-fi-rr-refresh {
+  -webkit-mask-image: url(icons/fi-rr-refresh.svg);
+  mask-image: url(icons/fi-rr-refresh.svg);
+}
+
+.dahlia-fi-rr-resize {
+  -webkit-mask-image: url(icons/fi-rr-resize.svg);
+  mask-image: url(icons/fi-rr-resize.svg);
+}
+
+.dahlia-fi-rr-resources {
+  -webkit-mask-image: url(icons/fi-rr-resources.svg);
+  mask-image: url(icons/fi-rr-resources.svg);
+}
+
+.dahlia-fi-rr-rewind {
+  -webkit-mask-image: url(icons/fi-rr-rewind.svg);
+  mask-image: url(icons/fi-rr-rewind.svg);
+}
+
+.dahlia-fi-rr-rhombus {
+  -webkit-mask-image: url(icons/fi-rr-rhombus.svg);
+  mask-image: url(icons/fi-rr-rhombus.svg);
+}
+
+.dahlia-fi-rr-rings-wedding {
+  -webkit-mask-image: url(icons/fi-rr-rings-wedding.svg);
+  mask-image: url(icons/fi-rr-rings-wedding.svg);
+}
+
+.dahlia-fi-rr-road {
+  -webkit-mask-image: url(icons/fi-rr-road.svg);
+  mask-image: url(icons/fi-rr-road.svg);
+}
+
+.dahlia-fi-rr-rocket {
+  -webkit-mask-image: url(icons/fi-rr-rocket.svg);
+  mask-image: url(icons/fi-rr-rocket.svg);
+}
+
+.dahlia-fi-rr-room-service {
+  -webkit-mask-image: url(icons/fi-rr-room-service.svg);
+  mask-image: url(icons/fi-rr-room-service.svg);
+}
+
+.dahlia-fi-rr-rotate-right {
+  -webkit-mask-image: url(icons/fi-rr-rotate-right.svg);
+  mask-image: url(icons/fi-rr-rotate-right.svg);
+}
+
+.dahlia-fi-rr-rugby {
+  -webkit-mask-image: url(icons/fi-rr-rugby.svg);
+  mask-image: url(icons/fi-rr-rugby.svg);
+}
+
+.dahlia-fi-rr-sad {
+  -webkit-mask-image: url(icons/fi-rr-sad.svg);
+  mask-image: url(icons/fi-rr-sad.svg);
+}
+
+.dahlia-fi-rr-salad {
+  -webkit-mask-image: url(icons/fi-rr-salad.svg);
+  mask-image: url(icons/fi-rr-salad.svg);
+}
+
+.dahlia-fi-rr-scale {
+  -webkit-mask-image: url(icons/fi-rr-scale.svg);
+  mask-image: url(icons/fi-rr-scale.svg);
+}
+
+.dahlia-fi-rr-school-bus {
+  -webkit-mask-image: url(icons/fi-rr-school-bus.svg);
+  mask-image: url(icons/fi-rr-school-bus.svg);
+}
+
+.dahlia-fi-rr-school {
+  -webkit-mask-image: url(icons/fi-rr-school.svg);
+  mask-image: url(icons/fi-rr-school.svg);
+}
+
+.dahlia-fi-rr-scissors {
+  -webkit-mask-image: url(icons/fi-rr-scissors.svg);
+  mask-image: url(icons/fi-rr-scissors.svg);
+}
+
+.dahlia-fi-rr-screen {
+  -webkit-mask-image: url(icons/fi-rr-screen.svg);
+  mask-image: url(icons/fi-rr-screen.svg);
+}
+
+.dahlia-fi-rr-search-alt {
+  -webkit-mask-image: url(icons/fi-rr-search-alt.svg);
+  mask-image: url(icons/fi-rr-search-alt.svg);
+}
+
+.dahlia-fi-rr-search-heart {
+  -webkit-mask-image: url(icons/fi-rr-search-heart.svg);
+  mask-image: url(icons/fi-rr-search-heart.svg);
+}
+
+.dahlia-fi-rr-search {
+  -webkit-mask-image: url(icons/fi-rr-search.svg);
+  mask-image: url(icons/fi-rr-search.svg);
+}
+
+.dahlia-fi-rr-settings-sliders {
+  -webkit-mask-image: url(icons/fi-rr-settings-sliders.svg);
+  mask-image: url(icons/fi-rr-settings-sliders.svg);
+}
+
+.dahlia-fi-rr-settings {
+  -webkit-mask-image: url(icons/fi-rr-settings.svg);
+  mask-image: url(icons/fi-rr-settings.svg);
+}
+
+.dahlia-fi-rr-share {
+  -webkit-mask-image: url(icons/fi-rr-share.svg);
+  mask-image: url(icons/fi-rr-share.svg);
+}
+
+.dahlia-fi-rr-shield-check {
+  -webkit-mask-image: url(icons/fi-rr-shield-check.svg);
+  mask-image: url(icons/fi-rr-shield-check.svg);
+}
+
+.dahlia-fi-rr-shield-exclamation {
+  -webkit-mask-image: url(icons/fi-rr-shield-exclamation.svg);
+  mask-image: url(icons/fi-rr-shield-exclamation.svg);
+}
+
+.dahlia-fi-rr-shield-interrogation {
+  -webkit-mask-image: url(icons/fi-rr-shield-interrogation.svg);
+  mask-image: url(icons/fi-rr-shield-interrogation.svg);
+}
+
+.dahlia-fi-rr-shield-plus {
+  -webkit-mask-image: url(icons/fi-rr-shield-plus.svg);
+  mask-image: url(icons/fi-rr-shield-plus.svg);
+}
+
+.dahlia-fi-rr-shield {
+  -webkit-mask-image: url(icons/fi-rr-shield.svg);
+  mask-image: url(icons/fi-rr-shield.svg);
+}
+
+.dahlia-fi-rr-ship-side {
+  -webkit-mask-image: url(icons/fi-rr-ship-side.svg);
+  mask-image: url(icons/fi-rr-ship-side.svg);
+}
+
+.dahlia-fi-rr-ship {
+  -webkit-mask-image: url(icons/fi-rr-ship.svg);
+  mask-image: url(icons/fi-rr-ship.svg);
+}
+
+.dahlia-fi-rr-shop {
+  -webkit-mask-image: url(icons/fi-rr-shop.svg);
+  mask-image: url(icons/fi-rr-shop.svg);
+}
+
+.dahlia-fi-rr-shopping-bag-add {
+  -webkit-mask-image: url(icons/fi-rr-shopping-bag-add.svg);
+  mask-image: url(icons/fi-rr-shopping-bag-add.svg);
+}
+
+.dahlia-fi-rr-shopping-bag {
+  -webkit-mask-image: url(icons/fi-rr-shopping-bag.svg);
+  mask-image: url(icons/fi-rr-shopping-bag.svg);
+}
+
+.dahlia-fi-rr-shopping-cart-add {
+  -webkit-mask-image: url(icons/fi-rr-shopping-cart-add.svg);
+  mask-image: url(icons/fi-rr-shopping-cart-add.svg);
+}
+
+.dahlia-fi-rr-shopping-cart-check {
+  -webkit-mask-image: url(icons/fi-rr-shopping-cart-check.svg);
+  mask-image: url(icons/fi-rr-shopping-cart-check.svg);
+}
+
+.dahlia-fi-rr-shopping-cart {
+  -webkit-mask-image: url(icons/fi-rr-shopping-cart.svg);
+  mask-image: url(icons/fi-rr-shopping-cart.svg);
+}
+
+.dahlia-fi-rr-shuffle {
+  -webkit-mask-image: url(icons/fi-rr-shuffle.svg);
+  mask-image: url(icons/fi-rr-shuffle.svg);
+}
+
+.dahlia-fi-rr-sign-in-alt {
+  -webkit-mask-image: url(icons/fi-rr-sign-in-alt.svg);
+  mask-image: url(icons/fi-rr-sign-in-alt.svg);
+}
+
+.dahlia-fi-rr-sign-in {
+  -webkit-mask-image: url(icons/fi-rr-sign-in.svg);
+  mask-image: url(icons/fi-rr-sign-in.svg);
+}
+
+.dahlia-fi-rr-sign-out-alt {
+  -webkit-mask-image: url(icons/fi-rr-sign-out-alt.svg);
+  mask-image: url(icons/fi-rr-sign-out-alt.svg);
+}
+
+.dahlia-fi-rr-sign-out {
+  -webkit-mask-image: url(icons/fi-rr-sign-out.svg);
+  mask-image: url(icons/fi-rr-sign-out.svg);
+}
+
+.dahlia-fi-rr-signal-alt-1 {
+  -webkit-mask-image: url(icons/fi-rr-signal-alt-1.svg);
+  mask-image: url(icons/fi-rr-signal-alt-1.svg);
+}
+
+.dahlia-fi-rr-signal-alt-2 {
+  -webkit-mask-image: url(icons/fi-rr-signal-alt-2.svg);
+  mask-image: url(icons/fi-rr-signal-alt-2.svg);
+}
+
+.dahlia-fi-rr-signal-alt {
+  -webkit-mask-image: url(icons/fi-rr-signal-alt.svg);
+  mask-image: url(icons/fi-rr-signal-alt.svg);
+}
+
+.dahlia-fi-rr-skateboard {
+  -webkit-mask-image: url(icons/fi-rr-skateboard.svg);
+  mask-image: url(icons/fi-rr-skateboard.svg);
+}
+
+.dahlia-fi-rr-smartphone {
+  -webkit-mask-image: url(icons/fi-rr-smartphone.svg);
+  mask-image: url(icons/fi-rr-smartphone.svg);
+}
+
+.dahlia-fi-rr-smile-wink {
+  -webkit-mask-image: url(icons/fi-rr-smile-wink.svg);
+  mask-image: url(icons/fi-rr-smile-wink.svg);
+}
+
+.dahlia-fi-rr-smile {
+  -webkit-mask-image: url(icons/fi-rr-smile.svg);
+  mask-image: url(icons/fi-rr-smile.svg);
+}
+
+.dahlia-fi-rr-snowflake {
+  -webkit-mask-image: url(icons/fi-rr-snowflake.svg);
+  mask-image: url(icons/fi-rr-snowflake.svg);
+}
+
+.dahlia-fi-rr-soap {
+  -webkit-mask-image: url(icons/fi-rr-soap.svg);
+  mask-image: url(icons/fi-rr-soap.svg);
+}
+
+.dahlia-fi-rr-soup {
+  -webkit-mask-image: url(icons/fi-rr-soup.svg);
+  mask-image: url(icons/fi-rr-soup.svg);
+}
+
+.dahlia-fi-rr-spa {
+  -webkit-mask-image: url(icons/fi-rr-spa.svg);
+  mask-image: url(icons/fi-rr-spa.svg);
+}
+
+.dahlia-fi-rr-speaker {
+  -webkit-mask-image: url(icons/fi-rr-speaker.svg);
+  mask-image: url(icons/fi-rr-speaker.svg);
+}
+
+.dahlia-fi-rr-sphere {
+  -webkit-mask-image: url(icons/fi-rr-sphere.svg);
+  mask-image: url(icons/fi-rr-sphere.svg);
+}
+
+.dahlia-fi-rr-spinner-alt {
+  -webkit-mask-image: url(icons/fi-rr-spinner-alt.svg);
+  mask-image: url(icons/fi-rr-spinner-alt.svg);
+}
+
+.dahlia-fi-rr-spinner {
+  -webkit-mask-image: url(icons/fi-rr-spinner.svg);
+  mask-image: url(icons/fi-rr-spinner.svg);
+}
+
+.dahlia-fi-rr-square-root {
+  -webkit-mask-image: url(icons/fi-rr-square-root.svg);
+  mask-image: url(icons/fi-rr-square-root.svg);
+}
+
+.dahlia-fi-rr-square {
+  -webkit-mask-image: url(icons/fi-rr-square.svg);
+  mask-image: url(icons/fi-rr-square.svg);
+}
+
+.dahlia-fi-rr-star-filled {
+  -webkit-mask-image: url(icons/fi-rr-star-filled.svg);
+  mask-image: url(icons/fi-rr-star-filled.svg);
+}
+
+.dahlia-fi-rr-star-octogram {
+  -webkit-mask-image: url(icons/fi-rr-star-octogram.svg);
+  mask-image: url(icons/fi-rr-star-octogram.svg);
+}
+
+.dahlia-fi-rr-star {
+  -webkit-mask-image: url(icons/fi-rr-star.svg);
+  mask-image: url(icons/fi-rr-star.svg);
+}
+
+.dahlia-fi-rr-stats {
+  -webkit-mask-image: url(icons/fi-rr-stats.svg);
+  mask-image: url(icons/fi-rr-stats.svg);
+}
+
+.dahlia-fi-rr-stethoscope {
+  -webkit-mask-image: url(icons/fi-rr-stethoscope.svg);
+  mask-image: url(icons/fi-rr-stethoscope.svg);
+}
+
+.dahlia-fi-rr-sticker {
+  -webkit-mask-image: url(icons/fi-rr-sticker.svg);
+  mask-image: url(icons/fi-rr-sticker.svg);
+}
+
+.dahlia-fi-rr-stop {
+  -webkit-mask-image: url(icons/fi-rr-stop.svg);
+  mask-image: url(icons/fi-rr-stop.svg);
+}
+
+.dahlia-fi-rr-stopwatch {
+  -webkit-mask-image: url(icons/fi-rr-stopwatch.svg);
+  mask-image: url(icons/fi-rr-stopwatch.svg);
+}
+
+.dahlia-fi-rr-subtitles {
+  -webkit-mask-image: url(icons/fi-rr-subtitles.svg);
+  mask-image: url(icons/fi-rr-subtitles.svg);
+}
+
+.dahlia-fi-rr-sun {
+  -webkit-mask-image: url(icons/fi-rr-sun.svg);
+  mask-image: url(icons/fi-rr-sun.svg);
+}
+
+.dahlia-fi-rr-sunrise {
+  -webkit-mask-image: url(icons/fi-rr-sunrise.svg);
+  mask-image: url(icons/fi-rr-sunrise.svg);
+}
+
+.dahlia-fi-rr-surfing {
+  -webkit-mask-image: url(icons/fi-rr-surfing.svg);
+  mask-image: url(icons/fi-rr-surfing.svg);
+}
+
+.dahlia-fi-rr-sword {
+  -webkit-mask-image: url(icons/fi-rr-sword.svg);
+  mask-image: url(icons/fi-rr-sword.svg);
+}
+
+.dahlia-fi-rr-syringe {
+  -webkit-mask-image: url(icons/fi-rr-syringe.svg);
+  mask-image: url(icons/fi-rr-syringe.svg);
+}
+
+.dahlia-fi-rr-tablet {
+  -webkit-mask-image: url(icons/fi-rr-tablet.svg);
+  mask-image: url(icons/fi-rr-tablet.svg);
+}
+
+.dahlia-fi-rr-target {
+  -webkit-mask-image: url(icons/fi-rr-target.svg);
+  mask-image: url(icons/fi-rr-target.svg);
+}
+
+.dahlia-fi-rr-taxi {
+  -webkit-mask-image: url(icons/fi-rr-taxi.svg);
+  mask-image: url(icons/fi-rr-taxi.svg);
+}
+
+.dahlia-fi-rr-tennis {
+  -webkit-mask-image: url(icons/fi-rr-tennis.svg);
+  mask-image: url(icons/fi-rr-tennis.svg);
+}
+
+.dahlia-fi-rr-terrace {
+  -webkit-mask-image: url(icons/fi-rr-terrace.svg);
+  mask-image: url(icons/fi-rr-terrace.svg);
+}
+
+.dahlia-fi-rr-test-tube {
+  -webkit-mask-image: url(icons/fi-rr-test-tube.svg);
+  mask-image: url(icons/fi-rr-test-tube.svg);
+}
+
+.dahlia-fi-rr-test {
+  -webkit-mask-image: url(icons/fi-rr-test.svg);
+  mask-image: url(icons/fi-rr-test.svg);
+}
+
+.dahlia-fi-rr-text-check {
+  -webkit-mask-image: url(icons/fi-rr-text-check.svg);
+  mask-image: url(icons/fi-rr-text-check.svg);
+}
+
+.dahlia-fi-rr-text {
+  -webkit-mask-image: url(icons/fi-rr-text.svg);
+  mask-image: url(icons/fi-rr-text.svg);
+}
+
+.dahlia-fi-rr-thermometer-half {
+  -webkit-mask-image: url(icons/fi-rr-thermometer-half.svg);
+  mask-image: url(icons/fi-rr-thermometer-half.svg);
+}
+
+.dahlia-fi-rr-thumbs-down {
+  -webkit-mask-image: url(icons/fi-rr-thumbs-down.svg);
+  mask-image: url(icons/fi-rr-thumbs-down.svg);
+}
+
+.dahlia-fi-rr-thumbs-up {
+  -webkit-mask-image: url(icons/fi-rr-thumbs-up.svg);
+  mask-image: url(icons/fi-rr-thumbs-up.svg);
+}
+
+.dahlia-fi-rr-thumbtack {
+  -webkit-mask-image: url(icons/fi-rr-thumbtack.svg);
+  mask-image: url(icons/fi-rr-thumbtack.svg);
+}
+
+.dahlia-fi-rr-ticket {
+  -webkit-mask-image: url(icons/fi-rr-ticket.svg);
+  mask-image: url(icons/fi-rr-ticket.svg);
+}
+
+.dahlia-fi-rr-time-add {
+  -webkit-mask-image: url(icons/fi-rr-time-add.svg);
+  mask-image: url(icons/fi-rr-time-add.svg);
+}
+
+.dahlia-fi-rr-time-check {
+  -webkit-mask-image: url(icons/fi-rr-time-check.svg);
+  mask-image: url(icons/fi-rr-time-check.svg);
+}
+
+.dahlia-fi-rr-time-delete {
+  -webkit-mask-image: url(icons/fi-rr-time-delete.svg);
+  mask-image: url(icons/fi-rr-time-delete.svg);
+}
+
+.dahlia-fi-rr-time-fast {
+  -webkit-mask-image: url(icons/fi-rr-time-fast.svg);
+  mask-image: url(icons/fi-rr-time-fast.svg);
+}
+
+.dahlia-fi-rr-time-forward-sixty {
+  -webkit-mask-image: url(icons/fi-rr-time-forward-sixty.svg);
+  mask-image: url(icons/fi-rr-time-forward-sixty.svg);
+}
+
+.dahlia-fi-rr-time-forward-ten {
+  -webkit-mask-image: url(icons/fi-rr-time-forward-ten.svg);
+  mask-image: url(icons/fi-rr-time-forward-ten.svg);
+}
+
+.dahlia-fi-rr-time-forward {
+  -webkit-mask-image: url(icons/fi-rr-time-forward.svg);
+  mask-image: url(icons/fi-rr-time-forward.svg);
+}
+
+.dahlia-fi-rr-time-half-past {
+  -webkit-mask-image: url(icons/fi-rr-time-half-past.svg);
+  mask-image: url(icons/fi-rr-time-half-past.svg);
+}
+
+.dahlia-fi-rr-time-oclock {
+  -webkit-mask-image: url(icons/fi-rr-time-oclock.svg);
+  mask-image: url(icons/fi-rr-time-oclock.svg);
+}
+
+.dahlia-fi-rr-time-past {
+  -webkit-mask-image: url(icons/fi-rr-time-past.svg);
+  mask-image: url(icons/fi-rr-time-past.svg);
+}
+
+.dahlia-fi-rr-time-quarter-past {
+  -webkit-mask-image: url(icons/fi-rr-time-quarter-past.svg);
+  mask-image: url(icons/fi-rr-time-quarter-past.svg);
+}
+
+.dahlia-fi-rr-time-quarter-to {
+  -webkit-mask-image: url(icons/fi-rr-time-quarter-to.svg);
+  mask-image: url(icons/fi-rr-time-quarter-to.svg);
+}
+
+.dahlia-fi-rr-time-twenty-four {
+  -webkit-mask-image: url(icons/fi-rr-time-twenty-four.svg);
+  mask-image: url(icons/fi-rr-time-twenty-four.svg);
+}
+
+.dahlia-fi-rr-tool-crop {
+  -webkit-mask-image: url(icons/fi-rr-tool-crop.svg);
+  mask-image: url(icons/fi-rr-tool-crop.svg);
+}
+
+.dahlia-fi-rr-tool-marquee {
+  -webkit-mask-image: url(icons/fi-rr-tool-marquee.svg);
+  mask-image: url(icons/fi-rr-tool-marquee.svg);
+}
+
+.dahlia-fi-rr-tooth {
+  -webkit-mask-image: url(icons/fi-rr-tooth.svg);
+  mask-image: url(icons/fi-rr-tooth.svg);
+}
+
+.dahlia-fi-rr-tornado {
+  -webkit-mask-image: url(icons/fi-rr-tornado.svg);
+  mask-image: url(icons/fi-rr-tornado.svg);
+}
+
+.dahlia-fi-rr-train-side {
+  -webkit-mask-image: url(icons/fi-rr-train-side.svg);
+  mask-image: url(icons/fi-rr-train-side.svg);
+}
+
+.dahlia-fi-rr-train {
+  -webkit-mask-image: url(icons/fi-rr-train.svg);
+  mask-image: url(icons/fi-rr-train.svg);
+}
+
+.dahlia-fi-rr-transform {
+  -webkit-mask-image: url(icons/fi-rr-transform.svg);
+  mask-image: url(icons/fi-rr-transform.svg);
+}
+
+.dahlia-fi-rr-trash {
+  -webkit-mask-image: url(icons/fi-rr-trash.svg);
+  mask-image: url(icons/fi-rr-trash.svg);
+}
+
+.dahlia-fi-rr-treatment {
+  -webkit-mask-image: url(icons/fi-rr-treatment.svg);
+  mask-image: url(icons/fi-rr-treatment.svg);
+}
+
+.dahlia-fi-rr-tree-christmas {
+  -webkit-mask-image: url(icons/fi-rr-tree-christmas.svg);
+  mask-image: url(icons/fi-rr-tree-christmas.svg);
+}
+
+.dahlia-fi-rr-tree {
+  -webkit-mask-image: url(icons/fi-rr-tree.svg);
+  mask-image: url(icons/fi-rr-tree.svg);
+}
+
+.dahlia-fi-rr-triangle {
+  -webkit-mask-image: url(icons/fi-rr-triangle.svg);
+  mask-image: url(icons/fi-rr-triangle.svg);
+}
+
+.dahlia-fi-rr-trophy {
+  -webkit-mask-image: url(icons/fi-rr-trophy.svg);
+  mask-image: url(icons/fi-rr-trophy.svg);
+}
+
+.dahlia-fi-rr-truck-side {
+  -webkit-mask-image: url(icons/fi-rr-truck-side.svg);
+  mask-image: url(icons/fi-rr-truck-side.svg);
+}
+
+.dahlia-fi-rr-umbrella {
+  -webkit-mask-image: url(icons/fi-rr-umbrella.svg);
+  mask-image: url(icons/fi-rr-umbrella.svg);
+}
+
+.dahlia-fi-rr-underline {
+  -webkit-mask-image: url(icons/fi-rr-underline.svg);
+  mask-image: url(icons/fi-rr-underline.svg);
+}
+
+.dahlia-fi-rr-undo-alt {
+  -webkit-mask-image: url(icons/fi-rr-undo-alt.svg);
+  mask-image: url(icons/fi-rr-undo-alt.svg);
+}
+
+.dahlia-fi-rr-undo {
+  -webkit-mask-image: url(icons/fi-rr-undo.svg);
+  mask-image: url(icons/fi-rr-undo.svg);
+}
+
+.dahlia-fi-rr-unlock {
+  -webkit-mask-image: url(icons/fi-rr-unlock.svg);
+  mask-image: url(icons/fi-rr-unlock.svg);
+}
+
+.dahlia-fi-rr-upload {
+  -webkit-mask-image: url(icons/fi-rr-upload.svg);
+  mask-image: url(icons/fi-rr-upload.svg);
+}
+
+.dahlia-fi-rr-usb-pendrive {
+  -webkit-mask-image: url(icons/fi-rr-usb-pendrive.svg);
+  mask-image: url(icons/fi-rr-usb-pendrive.svg);
+}
+
+.dahlia-fi-rr-user-add {
+  -webkit-mask-image: url(icons/fi-rr-user-add.svg);
+  mask-image: url(icons/fi-rr-user-add.svg);
+}
+
+.dahlia-fi-rr-user-delete {
+  -webkit-mask-image: url(icons/fi-rr-user-delete.svg);
+  mask-image: url(icons/fi-rr-user-delete.svg);
+}
+
+.dahlia-fi-rr-user-remove {
+  -webkit-mask-image: url(icons/fi-rr-user-remove.svg);
+  mask-image: url(icons/fi-rr-user-remove.svg);
+}
+
+.dahlia-fi-rr-user-time {
+  -webkit-mask-image: url(icons/fi-rr-user-time.svg);
+  mask-image: url(icons/fi-rr-user-time.svg);
+}
+
+.dahlia-fi-rr-user {
+  -webkit-mask-image: url(icons/fi-rr-user.svg);
+  mask-image: url(icons/fi-rr-user.svg);
+}
+
+.dahlia-fi-rr-utensils {
+  -webkit-mask-image: url(icons/fi-rr-utensils.svg);
+  mask-image: url(icons/fi-rr-utensils.svg);
+}
+
+.dahlia-fi-rr-vector-alt {
+  -webkit-mask-image: url(icons/fi-rr-vector-alt.svg);
+  mask-image: url(icons/fi-rr-vector-alt.svg);
+}
+
+.dahlia-fi-rr-vector {
+  -webkit-mask-image: url(icons/fi-rr-vector.svg);
+  mask-image: url(icons/fi-rr-vector.svg);
+}
+
+.dahlia-fi-rr-venus-double {
+  -webkit-mask-image: url(icons/fi-rr-venus-double.svg);
+  mask-image: url(icons/fi-rr-venus-double.svg);
+}
+
+.dahlia-fi-rr-venus-mars {
+  -webkit-mask-image: url(icons/fi-rr-venus-mars.svg);
+  mask-image: url(icons/fi-rr-venus-mars.svg);
+}
+
+.dahlia-fi-rr-venus {
+  -webkit-mask-image: url(icons/fi-rr-venus.svg);
+  mask-image: url(icons/fi-rr-venus.svg);
+}
+
+.dahlia-fi-rr-video-camera {
+  -webkit-mask-image: url(icons/fi-rr-video-camera.svg);
+  mask-image: url(icons/fi-rr-video-camera.svg);
+}
+
+.dahlia-fi-rr-volleyball {
+  -webkit-mask-image: url(icons/fi-rr-volleyball.svg);
+  mask-image: url(icons/fi-rr-volleyball.svg);
+}
+
+.dahlia-fi-rr-volume {
+  -webkit-mask-image: url(icons/fi-rr-volume.svg);
+  mask-image: url(icons/fi-rr-volume.svg);
+}
+
+.dahlia-fi-rr-wheelchair {
+  -webkit-mask-image: url(icons/fi-rr-wheelchair.svg);
+  mask-image: url(icons/fi-rr-wheelchair.svg);
+}
+
+.dahlia-fi-rr-wifi-alt {
+  -webkit-mask-image: url(icons/fi-rr-wifi-alt.svg);
+  mask-image: url(icons/fi-rr-wifi-alt.svg);
+}
+
+.dahlia-fi-rr-wind {
+  -webkit-mask-image: url(icons/fi-rr-wind.svg);
+  mask-image: url(icons/fi-rr-wind.svg);
+}
+
+.dahlia-fi-rr-woman-head {
+  -webkit-mask-image: url(icons/fi-rr-woman-head.svg);
+  mask-image: url(icons/fi-rr-woman-head.svg);
+}
+
+.dahlia-fi-rr-world {
+  -webkit-mask-image: url(icons/fi-rr-world.svg);
+  mask-image: url(icons/fi-rr-world.svg);
+}
+
+.dahlia-fi-rr-yen {
+  -webkit-mask-image: url(icons/fi-rr-yen.svg);
+  mask-image: url(icons/fi-rr-yen.svg);
+}
+
+.dahlia-fi-rr-zoom-in {
+  -webkit-mask-image: url(icons/fi-rr-zoom-in.svg);
+  mask-image: url(icons/fi-rr-zoom-in.svg);
+}
+
+.dahlia-fi-rr-zoom-out {
+  -webkit-mask-image: url(icons/fi-rr-zoom-out.svg);
+  mask-image: url(icons/fi-rr-zoom-out.svg);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  /* 1 */
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  /* 2 */
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p > a {
+  text-decoration: underline;
+  color: var(--wp--preset--color--color-primary-06, #E01F1F);
+}
+
+button {
+  background-color: var(--wp--preset--color--grey-02, #F0F0F0);
+  border-radius: 0.5rem;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.15);
+  border: none;
+  display: flex;
+  align-items: center;
+  padding: 0.75rem;
+  font-size: 1rem;
+  color: var(--wp--preset--color--grey-09, #393939);
+  gap: 0.5rem;
+}
+button:hover {
+  background-color: var(--wp--preset--color--grey-07, #595959);
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.25);
+  color: white;
+}
+button:hover * {
+  background-color: var(--wp--preset--color--color-primary-00, #FFFAFA);
+}
+
+.is-layout-constrained > :where(:not(.alignfull)) {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@media (min-width: 992px) {
+  .is-layout-constrained > :where(:not(.alignfull)) {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+@media (min-width: 1200px) {
+  .is-layout-constrained > :where(:not(.alignfull)) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.dahlia-chip {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 0.875rem;
+  background-color: var(--wp--preset--color--color-primary-01);
+  color: var(--wp--preset--color--color-primary-06);
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 32px;
+  width: fit-content;
+}
+.dahlia-chip.large {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 0.875rem;
+}
+
+.paragraph-regular-2xl {
+  font-family: Lexend;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.75rem; /* 116.667% */
 }

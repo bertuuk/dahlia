@@ -1,0 +1,12 @@
+@use '../base/vars' as *;
+/**
+ * Applies styles to the separator block
+ * when the "towering" style is selected.
+ */
+ .wp-block-separator.is-style-towering {
+    background-color: var(--wp--preset--color--color-primary-01); /* Custom background color */
+    height: 16px; /* Custom height */
+    width:100%!important;
+    border: none; /* Remove default border */
+    margin: 1.5rem 0; /* Vertical spacing */
+}
