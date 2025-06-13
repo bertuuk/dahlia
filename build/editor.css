@@ -2,6 +2,28 @@
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[3]!./assets/sass/editor.scss ***!
   \****************************************************************************************************************************************************************************************/
 @charset "UTF-8";
+.sr-only-focusable {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.sr-only-focusable:focus {
+  position: static !important;
+  width: auto !important;
+  height: auto !important;
+  padding: 1rem;
+  margin: 0.5rem;
+  background: #000;
+  color: #fff;
+  z-index: 1000;
+  text-decoration: underline;
+}
+
 .alignwide {
   max-width: 1200px;
   margin-left: auto;
@@ -2546,19 +2568,34 @@
 }
 
 .sr-only {
-  border: 0 !important;
-  clip: rect(1px, 1px, 1px, 1px) !important;
-  /* 1 */
-  -webkit-clip-path: inset(50%) !important;
-  clip-path: inset(50%) !important;
-  /* 2 */
-  height: 1px !important;
-  margin: -1px !important;
-  overflow: hidden !important;
-  padding: 0 !important;
-  position: absolute !important;
-  width: 1px !important;
-  white-space: nowrap !important;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.sr-only-focusable {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.sr-only-focusable:focus, .sr-only-focusable:focus-within {
+  position: relative;
+  width: auto !important;
+  height: auto !important;
+  clip: initial;
+  margin: inherit;
+  padding: inherit;
+  border: initial;
 }
 
 a {
@@ -2592,20 +2629,41 @@ button:hover * {
   background-color: var(--wp--preset--color--color-primary-00, #FFFAFA);
 }
 
-.is-layout-constrained > :where(:not(.alignfull)) {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-@media (min-width: 992px) {
+@media (max-width: 992px) {
   .is-layout-constrained > :where(:not(.alignfull)) {
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
-@media (min-width: 1200px) {
-  .is-layout-constrained > :where(:not(.alignfull)) {
-    padding-right: 0;
-    padding-left: 0;
+
+#site-header {
+  position: relative;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  z-index: 999;
+}
+#site-header > .wp-block-group {
+  margin-block-start: 0;
+}
+#site-header .wp-block-navigation .wp-block-navigation-item.current-menu-item > a {
+  border-bottom: 0.2rem solid var(--wp--preset--color--color-primary-06);
+}
+#site-header .wp-block-navigation .wp-block-navigation-item__content {
+  padding-top: 1.2rem;
+  padding-bottom: 1rem;
+  border-bottom: 0.2rem solid transparent;
+  transition: border 0.3s ease;
+}
+#site-header .wp-block-navigation .wp-block-navigation-item__content:hover {
+  border-bottom: 3px solid var(--wp--preset--color--color-primary-06);
+}
+
+@media (max-width: 992px) {
+  .has-modal-open .wp-block-site-logo {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    z-index: 999999;
+    background-color: var(--wp--preset--color--color-primary-00, #FFFAFA);
   }
 }
 
@@ -2636,4 +2694,14 @@ button:hover * {
   font-style: normal;
   font-weight: 600;
   line-height: 1.75rem; /* 116.667% */
+}
+
+.wp-block-comment-template .comment a {
+  color: var(--wp--preset--color--color-primary-06, #E01F1F);
+  text-decoration: underline;
+}
+
+.wp-block-post-comments-form .comment-form textarea {
+  border-radius: 10px;
+  background-color: var(--wp--preset--color--color-primary-00, #FFFAFA);
 }

@@ -8,6 +8,22 @@
 	@include visually-hidden;
 }
 
+.sr-only-focusable {
+	@include visually-hidden;
+
+	&:focus, &:focus-within {
+        position: relative;
+		width: auto !important;
+		height: auto !important;
+        clip: initial;
+		margin: inherit;
+        padding: inherit;
+        border: initial;
+	}
+}
+
+
+
 a {
     text-decoration: none; // Elimina el subrayado
     color: inherit; // Hereda el color del elemento padre
@@ -42,14 +58,9 @@ button{
 }
 
 .is-layout-constrained > :where(:not(.alignfull)){
-    padding-left:10px;
-    padding-right:10px;
-    @media(min-width:$screen-lg){
-        padding-right:15px;
-        padding-left:15px;
-    }
-    @media(min-width:$screen-xl){
-        padding-right:0;
-        padding-left:0;
+   
+    @media(max-width:$screen-lg){
+        padding-left:10px;
+        padding-right:10px;
     }
 }

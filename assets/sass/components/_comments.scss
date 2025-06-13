@@ -1,0 +1,19 @@
+@use '../base/vars' as *;
+.wp-block-comment-template{
+
+    .comment{
+        a{
+            color:$primary-06;
+            text-decoration: underline;
+        }
+    }
+}
+
+.wp-block-post-comments-form{
+    .comment-form{
+        textarea{
+            border-radius:10px;
+            background-color: $primary-00;
+        }
+    }
+}
