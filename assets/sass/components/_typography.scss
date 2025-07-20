@@ -1,5 +1,7 @@
+@use '../base/vars' as *;
+
 .paragraph-regular-2xl{
-    font-family: Lexend;
+    font-family: $secondary-font;
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 600;

@@ -3,6 +3,13 @@
 	box-sizing:border-box;
 }
 
+*:focus-visible{
+    outline: 2px solid $black;
+    outline-offset: 1px;
+    box-shadow: 0px 0px 0px 4px $white;
+    border-radius: 3px;
+}
+
 
 .sr-only{
 	@include visually-hidden;
@@ -22,7 +29,13 @@
 	}
 }
 
-
+input,
+textarea,
+select,
+button {
+  font-family: $primary-font;
+  font-size: inherit;
+}
 
 a {
     text-decoration: none; // Elimina el subrayado

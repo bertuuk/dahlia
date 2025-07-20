@@ -26,6 +26,10 @@ $white: var(--wp--preset--color--color-primary-00, #FFFAFA);
 
 $gradient-0607: linear-gradient(128deg, $primary-06 5.2%, $primary-07 95.51%);
 
+$primary-font: var(--wp--preset--font-family--primary-font, 'Josefin Sans', sans-serif);
+$secondary-font: var(--wp--preset--font-family--secondary-font, 'Lexend', sans-serif);
+
+
 @mixin visually-hidden {
 	position: absolute;
 	width: 1px;

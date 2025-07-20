@@ -217,9 +217,19 @@
                     "slug": "josefin-sans"
                 },
                 {
+                    "fontFamily": "'Josefin Sans', sans-serif",
+                    "name": "Primary Font",
+                    "slug": "primary-font"
+                },
+                {
                     "fontFamily": "Lexend, sans-serif",
                     "name": "Lexend",
                     "slug": "lexend"
+                },
+                {
+                    "fontFamily": "Lexend, sans-serif",
+                    "name": "Secondary Font",
+                    "slug": "secondary-font"
                 }
             ]
         },
@@ -235,27 +245,27 @@
             "text": "#333333"
         },
         "typography": {
-            "fontFamily": "var:preset|font-family|lexend",
+            "fontFamily": "var:preset|font-family|secondary-font",
             "fontWeight": "350"
         },
         "elements": {
             "h1": {
                 "typography": {
-                    "fontFamily": "var:preset|font-family|josefin-sans",
+                    "fontFamily": "var:preset|font-family|primary-font",
                     "letterSpacing": "-0.03rem",
                     "fontSize": "var:preset|font-size|extralarge"
                 }
             },
             "h2": {
                 "typography": {
-                    "fontFamily": "var:preset|font-family|josefin-sans",
+                    "fontFamily": "var:preset|font-family|primary-font",
                     "letterSpacing": "-0.03rem",
                     "fontSize": "var:preset|font-size|small-large"
                 }
             },
             "h3": {
                 "typography": {
-                    "fontFamily": "var:preset|font-family|josefin-sans",
+                    "fontFamily": "var:preset|font-family|primary-font",
                     "letterSpacing": "-0.03rem",
                     "fontSize": "var:preset|font-size|large-medium"
                 }
@@ -351,7 +361,7 @@
         }
     },
     "customTemplates": [
-       {
+        {
             "name": "landing",
             "title": "Pàgina promocional",
             "postTypes": [

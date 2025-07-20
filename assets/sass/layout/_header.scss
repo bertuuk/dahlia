@@ -7,24 +7,6 @@
     > .wp-block-group{
         margin-block-start: 0;
     }
-    .wp-block-navigation{
-        .wp-block-navigation-item{
-            &.current-menu-item{
-                > a{
-                    border-bottom:.2rem solid var(--wp--preset--color--color-primary-06);
-                }
-            }
-            &__content{
-                padding-top:1.2rem;
-                padding-bottom: 1rem;
-                border-bottom:.2rem solid transparent;
-                transition:border 0.3s ease;
-                &:hover{
-                    border-bottom:3px solid var(--wp--preset--color--color-primary-06);
-                }
-            }
-        }
-    }
 }
 
 
