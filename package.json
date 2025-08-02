@@ -5,6 +5,7 @@
   "main": "webpack.config.js",
   "scripts": {
     "generate-icons": "node tools/generate-icons-css.js",
+    "update-version": "node tools/update-version.js",
     "start": "webpack --watch",
     "build": "node tools/generate-icons-css.js && webpack --mode production"
   },

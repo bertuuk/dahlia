@@ -4,7 +4,7 @@
  * when the "towering" style is selected.
  */
  .wp-block-separator.is-style-towering {
-    background-color: var(--wp--preset--color--color-primary-01); /* Custom background color */
+    background-color: $primary-01; /* Custom background color */
     height: 16px; /* Custom height */
     width:100%!important;
     border: none; /* Remove default border */

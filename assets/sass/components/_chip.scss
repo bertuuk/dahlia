@@ -1,11 +1,12 @@
+@use '../base/vars' as *;
 .dahlia-chip{
     padding-left:10px;
     padding-right:10px;
     padding-top:5px;
     padding-bottom:5px;
     font-size: 0.875rem;
-    background-color: var(--wp--preset--color--color-primary-01);
-    color: var(--wp--preset--color--color-primary-06);
+    background-color: $primary-01;
+    color: $primary-06;
     font-weight:600;
     text-transform:uppercase;
     border-radius:32px;

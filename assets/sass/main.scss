@@ -2,6 +2,7 @@
 @use 'base/reset';
 @use 'base/icons';
 @use 'base/base';
+@use 'base/animations';
 @use 'layout/header';
 @use 'layout/footer';
 @use 'layout/grid';
@@ -9,3 +10,4 @@
 @use 'components/forms';
 @use 'components/chip';
 @use 'components/typography';
+@use 'components/comments';

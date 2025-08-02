@@ -1,0 +1,46 @@
+@use './vars' as *;
+
+@mixin sticky-component{
+    position: fixed!important;
+    width: 100%;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background-color: $white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.is-sticky {
+    @include sticky-component;
+}
+
+.is-sticky-desktop {
+    @media(min-width: $screen-lg) {
+        @include sticky-component;
+    }
+}
+
+.has-animated-sticky {
+    animation: dropDown 0.3s ease forwards;
+}
+
+.has-animated-dropup {
+    animation: dropUp 0.2s ease forwards;
+}
+
+@keyframes dropDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes dropUp {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-100%);
+    }
+}

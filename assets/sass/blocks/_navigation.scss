@@ -1,0 +1,180 @@
+@use '../base/vars' as *;
+
+/* ------------------------------
+   Responsive Dialog Container
+------------------------------ */
+#site-header{
+	.wp-block-navigation__responsive-dialog {
+		@media (max-width: $screen-lg) {
+			position: fixed;
+			top: 0;
+			width: 100%;
+			max-height: 100%;
+			overflow: scroll;
+		}
+	}
+
+	/* ------------------------------
+	Responsive Container (Botons + Llista)
+	------------------------------ */
+	.wp-block-navigation__responsive-container {
+
+		&-open,
+		&-close {
+			@media (max-width: $screen-lg) {
+				top: auto;
+				position: fixed;
+				bottom: 1rem;
+				right: 1rem;
+				background-color: $primary-06;
+				padding: .8rem;
+				border-radius: 1rem;
+				color: $white;
+				z-index: 999;
+
+				svg {
+					width: 32px;
+					height: 32px;
+				}
+
+				&:hover {
+					background-color: $primary-09;
+
+					* {
+						color: inherit;
+						background-color: inherit;
+					}
+				}
+			}
+		}
+
+		&-content {
+
+			// Desktop submenu styling
+			@media (min-width: $screen-lg) {
+				li.has-child .wp-block-navigation__submenu-container {
+					border-radius: 10px;
+					overflow: hidden !important;
+				}
+			}
+
+			// Mobile layout
+			@media (max-width: $screen-lg) {
+				text-align: center;
+				padding-bottom: 2rem;
+
+				ul {
+					width: 100%;
+				}
+
+				li {
+					width: 100%;
+
+					.wp-block-navigation-item__content {
+						width: 100%;
+						text-align: left;
+						padding: 1.3rem 1.3rem !important;
+						font-size: 1.2rem;
+
+						@media (min-width: $screen-lg) {
+							font-size: 1rem;
+						}
+					}
+
+					&.has-child .wp-block-navigation__submenu-container {
+						width: 100% !important;
+						padding-top: 1rem !important;
+
+						li.wp-block-navigation-item {
+					
+						}
+					}
+				}
+
+				>div[class*='wp-block-'] {
+					justify-content: center;
+					width: 100%;
+
+					a {
+						padding-top: .7rem;
+						padding-bottom: .7rem;
+					}
+				}
+			}
+		}
+	}
+
+	/* ------------------------------
+	Ítems de menú (estils comuns)
+	------------------------------ */
+	.wp-block-navigation .wp-block-navigation-item {
+		&.current-menu-item>a {
+			border-style: solid;
+			border-color: $primary-06;
+			border-width: 0rem;
+			border-left-width:.4rem;
+
+			@media (min-width: ($screen-lg + 1)) {
+				border-bottom-width: .2rem;
+				border-left-width:0rem;
+			}
+		}
+
+		&__content {
+			padding-top: 1.2rem;
+			padding-bottom: 1rem;
+			border-bottom: .2rem solid transparent;
+			transition: border 0.3s ease;
+
+			&:hover {
+				border-bottom: 3px solid $primary-06;
+			}
+		}
+	}
+
+	/* ------------------------------
+	Responsive: Mobile (≤ $screen-lg)
+	------------------------------ */
+	@media (max-width: $screen-lg) {
+		.wp-block-navigation {
+			--navigation-layout: overlay;
+			row-gap: 0;
+			border-top: 1px solid $grey-01;
+			
+
+			&__responsive-container {
+				display: none !important;
+
+				&.is-menu-open {
+					display: flex !important;
+					flex-direction: column;
+				}
+
+				&-open {
+					display: block !important;
+				}
+			}
+
+			&-item {
+				border-bottom: 1px solid $grey-01;
+				&_content {
+					// Empty: kept for future overrides if needed
+				}
+			}
+		}
+	}
+
+	/* ------------------------------
+	Responsive: Desktop (≥ $screen-lg + 1)
+	------------------------------ */
+	@media (min-width: ($screen-lg + 1)) {
+		.wp-block-navigation__responsive-container-open {
+			display: none !important;
+		}
+
+		.wp-block-navigation__responsive-container {
+			display: flex !important;
+			flex-direction: row;
+		}
+	}
+}

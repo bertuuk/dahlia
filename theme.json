@@ -18,7 +18,7 @@
                     "slug": "black",
                     "color": "#151515",
                     "name": "Black"
-                },      
+                },
                 {
                     "slug": "colorPrimary-00",
                     "color": "#FFFAFA",
@@ -217,9 +217,19 @@
                     "slug": "josefin-sans"
                 },
                 {
+                    "fontFamily": "'Josefin Sans', sans-serif",
+                    "name": "Primary Font",
+                    "slug": "primary-font"
+                },
+                {
                     "fontFamily": "Lexend, sans-serif",
                     "name": "Lexend",
                     "slug": "lexend"
+                },
+                {
+                    "fontFamily": "Lexend, sans-serif",
+                    "name": "Secondary Font",
+                    "slug": "secondary-font"
                 }
             ]
         },
@@ -231,34 +241,33 @@
     },
     "styles": {
         "color": {
-            "background": "#FAFAFA",
+            "background": "var:preset|color|color-primary-00",
             "text": "#333333"
         },
         "typography": {
-            "fontFamily": "var:preset|font-family|lexend",
+            "fontFamily": "var:preset|font-family|secondary-font",
             "fontWeight": "350"
         },
         "elements": {
             "h1": {
                 "typography": {
-                    "fontFamily": "var:preset|font-family|josefin-sans",
+                    "fontFamily": "var:preset|font-family|primary-font",
                     "letterSpacing": "-0.03rem",
-                    "fontSize": "var:preset|font-size|large"
+                    "fontSize": "var:preset|font-size|extralarge"
                 }
             },
             "h2": {
                 "typography": {
-                    "fontFamily": "var:preset|font-family|josefin-sans",
+                    "fontFamily": "var:preset|font-family|primary-font",
                     "letterSpacing": "-0.03rem",
                     "fontSize": "var:preset|font-size|small-large"
                 }
             },
             "h3": {
                 "typography": {
-                    "fontFamily": "var:preset|font-family|josefin-sans",
+                    "fontFamily": "var:preset|font-family|primary-font",
                     "letterSpacing": "-0.03rem",
                     "fontSize": "var:preset|font-size|large-medium"
-                    
                 }
             }
         },
@@ -289,7 +298,7 @@
             "core/paragraph": {
                 "typography": {
                     "lineHeight": "1.7",
-                    "fontSize": "var(--wp--preset--font-size--base)"
+                    "fontSize": "var:preset|font-size|base"
                 },
                 "spacing": {
                     "margin": {
@@ -299,7 +308,7 @@
             },
             "core/post-title": {
                 "typography": {
-                    "fontSize": "1.5rem"
+                    "fontSize": "var:preset|font-size|large"
                 },
                 "color": {
                     "text": "#333333"
@@ -323,30 +332,48 @@
             },
             "core/post-featured-image": {
                 "spacing": {
-                    "marginBottom": "1rem"
+                    "margin": {
+                        "bottom": "1rem"
+                    }
                 },
                 "border": {
                     "radius": "8px"
                 }
             },
-            "core/list":{
+            "core/list": {
                 "spacing": {
                     "padding": {
-                        "left":"var:preset|spacing|20"
+                        "left": "var:preset|spacing|20"
                     }
                 }
             },
-            "core/list-item":{
+            "core/list-item": {
                 "typography": {
                     "lineHeight": "1.7",
-                    "fontSize": "var(--wp--preset--font-size--base)"
+                    "fontSize": "var:preset|font-size|base"
                 },
                 "spacing": {
                     "padding": {
-                        "top":"15px"
+                        "top": "15px"
                     }
                 }
             }
         }
-    }
+    },
+    "customTemplates": [
+        {
+            "name": "landing",
+            "title": "Pàgina promocional",
+            "postTypes": [
+                "page"
+            ]
+        },
+        {
+            "name": "user-profile",
+            "title": "Perfil d'usuari",
+            "postTypes": [
+                "page"
+            ]
+        }
+    ]
 }

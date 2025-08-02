@@ -11,7 +11,7 @@
 import 'tiny-slider/src/tiny-slider.scss';
 
 // Import Tiny Slider JS
-import { tns } from 'tiny-slider/src/tiny-slider';
+import { tns } from 'tiny-slider';
 
 
 // Export Tiny Slider globally si otros scripts necesitan acceder

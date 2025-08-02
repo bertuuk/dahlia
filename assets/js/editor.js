@@ -13,7 +13,6 @@ wp.domReady(function () {
         const iframe = document.querySelector('iframe');
         if (iframe && iframe.contentDocument) {
             const lazyElements = iframe.contentDocument.querySelectorAll('.lazyload');
-            console.log(lazyElements);
             lazyElements.forEach(function (el) {
                 var bg = el.getAttribute('data-bgset');
                 if (bg) {

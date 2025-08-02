@@ -5,7 +5,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 function dahlia_theme_setup() {
     // Soporte para theme.json
-    add_theme_support( 'block-templates' );
     add_theme_support( 'wp-block-styles' );
     add_theme_support( 'editor-styles' );
     add_theme_support( 'align-wide' );
@@ -195,24 +194,6 @@ function render_user_favorite_stories() {
     return ob_get_clean();
 }
 add_shortcode( 'user_favorite_stories', 'render_user_favorite_stories' );
-
-/**
- * Registers all block patterns located in the block-patterns directory.
- *
- * This function iterates through each PHP file in the block-patterns directory
- * and includes them to register custom block patterns dynamically.
- *
- * @return void
- */
-add_action( 'init', function() {
-    // Get the directory path for block patterns.
-    $pattern_dir = get_template_directory() . '/block-patterns';
-
-    // Iterate through all PHP files in the block-patterns directory.
-    foreach ( glob( $pattern_dir . '/*.php' ) as $pattern_file ) {
-        include $pattern_file; // Include each pattern file to register its pattern.
-    }
-});
 
 /**
  * Registers a custom block pattern category named 'Dahlia Patterns'.

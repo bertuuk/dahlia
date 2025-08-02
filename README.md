@@ -3,6 +3,8 @@
 **A clean, accessible, and block-first WordPress theme designed for storytelling, education, and content-rich websites.**  
 Built with Full Site Editing (FSE) and designed to work seamlessly with [Dahlia Blocks](https://github.com/bertuuk/dahlia-blocks) and [Dahlia Features](https://github.com/bertuuk/dahlia-features).
 
+Stable version: 1.0.3
+
 ![WordPress version](https://img.shields.io/badge/WordPress-6.0%2B-blue)
 ![FSE](https://img.shields.io/badge/FSE-Enabled-success)
 ![License](https://img.shields.io/badge/license-GPLv2-orange)

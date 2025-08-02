@@ -1,0 +1,8 @@
+@use '../base/vars' as *;
+.no-image-mobile{
+    figure{
+        @media(max-width: $screen-md) {
+            display: none;
+        }
+    }
+}

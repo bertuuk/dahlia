@@ -1,4 +1,7 @@
+@use './base/vars' as *;
+@use 'blocks/block-class';
 @use 'blocks/separator';
 @use 'blocks/post-terms';
 @use 'blocks/button';
 @use 'blocks/heading';
+@use 'blocks/navigation';
