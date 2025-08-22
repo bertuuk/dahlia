@@ -1,0 +1,13 @@
+@use '../base/vars' as *;
+
+@media(max-width: $screen-lg) {
+    :root{
+        --wp--preset--spacing--30: 16px;
+        --wp--preset--spacing--40: 24px;
+        --wp--preset--spacing--50: 48px;
+        --wp--preset--spacing--60: 1.125rem;
+        --wp--preset--spacing--70: 1.69rem;
+        --wp--preset--spacing--80: 2.53rem;
+    }
+    
+}

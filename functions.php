@@ -37,6 +37,13 @@ function dahlia_enqueue_assets() {
         get_template_directory_uri() . '/build/main.js', array(),
          $theme_version, 
          true );
+    wp_enqueue_script(
+		'shared-functions',
+		get_template_directory_uri() . '/assets/js/utils/sharedFunctions.js',
+		[],
+		'1.0',
+		true
+	);
 }
 add_action( 'wp_enqueue_scripts', 'dahlia_enqueue_assets' );
 

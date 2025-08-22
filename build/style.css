@@ -54,6 +54,10 @@
   width: 1.25rem;
   height: 1.25rem;
 }
+.dahlia-icon.di-medium {
+  width: 1.7rem;
+  height: 1.7rem;
+}
 .dahlia-icon.di-large {
   width: 2rem;
   height: 2rem;
@@ -2695,6 +2699,16 @@ button:hover * {
   }
   to {
     transform: translateY(-100%);
+  }
+}
+@media (max-width: 992px) {
+  :root {
+    --wp--preset--spacing--30: 16px;
+    --wp--preset--spacing--40: 24px;
+    --wp--preset--spacing--50: 48px;
+    --wp--preset--spacing--60: 1.125rem;
+    --wp--preset--spacing--70: 1.69rem;
+    --wp--preset--spacing--80: 2.53rem;
   }
 }
 #site-header {
