@@ -6,3 +6,11 @@
         }
     }
 }
+
+.change-flex-order-mobile{
+    .wp-block-column:nth-child(1) {
+        @media(max-width: $screen-lg) {
+            order: 2;
+        }
+    }
+}

@@ -30,6 +30,12 @@
   }
 }
 
+@media (max-width: 992px) {
+  .change-flex-order-mobile .wp-block-column:nth-child(1) {
+    order: 2;
+  }
+}
+
 /**
  * Applies styles to the separator block
  * when the "towering" style is selected.

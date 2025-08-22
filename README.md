@@ -103,3 +103,9 @@ Developed and maintained by [@bertuuk](https://github.com/bertuuk)
 - [ ] Document template structure
 - [ ] Add accessibility statement
 - [ ] Optimize for performance scores (Lighthouse/Core Web Vitals)
+
+---
+
+## Available Classes for blocks.
+- .change-flex-order-mobile: Used to change the order established on block columns. Works better on block with two columns.
+- .no-image-mobile: Used on image guttenberg blocks. Prevents image to show on mobile
