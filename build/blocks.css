@@ -168,7 +168,6 @@
 @media (max-width: 992px) {
   #site-header .wp-block-navigation__responsive-container-content li.has-child .wp-block-navigation__submenu-container {
     width: 100% !important;
-    padding-top: 1rem !important;
   }
   #site-header .wp-block-navigation__responsive-container-content > div[class*=wp-block-] {
     justify-content: center;
@@ -227,5 +226,40 @@
   #site-header .wp-block-navigation__responsive-container {
     display: flex !important;
     flex-direction: row;
+  }
+}
+
+/* ------------------------------
+	Dropdown submenu (mobile)
+	------------------------------ */
+@media (max-width: 992px) {
+  .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation-item.has-child .wp-block-navigation__submenu-container {
+    overflow: hidden;
+    max-height: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    padding-top: 0;
+  }
+  .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation-item.has-child.is-submenu-open > .wp-block-navigation__submenu-container {
+    visibility: visible;
+    opacity: 1;
+    max-height: 30rem;
+  }
+  .wp-block-navigation__responsive-container.is-menu-open .c-menu-item-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-right: 1.3rem;
+  }
+  .wp-block-navigation__responsive-container.is-menu-open .c-submenu-toggle {
+    min-width: 35px;
+    height: 35px;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    color: inherit;
+    align-items: center;
+    justify-content: center;
   }
 }

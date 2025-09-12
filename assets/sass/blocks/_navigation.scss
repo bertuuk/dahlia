@@ -3,7 +3,7 @@
 /* ------------------------------
    Responsive Dialog Container
 ------------------------------ */
-#site-header{
+#site-header {
 	.wp-block-navigation__responsive-dialog {
 		@media (max-width: $screen-lg) {
 			position: fixed;
@@ -83,11 +83,8 @@
 
 					&.has-child .wp-block-navigation__submenu-container {
 						width: 100% !important;
-						padding-top: 1rem !important;
 
-						li.wp-block-navigation-item {
-					
-						}
+						li.wp-block-navigation-item {}
 					}
 				}
 
@@ -112,11 +109,11 @@
 			border-style: solid;
 			border-color: $primary-06;
 			border-width: 0rem;
-			border-left-width:.4rem;
+			border-left-width: .4rem;
 
 			@media (min-width: ($screen-lg + 1)) {
 				border-bottom-width: .2rem;
-				border-left-width:0rem;
+				border-left-width: 0rem;
 			}
 		}
 
@@ -140,7 +137,7 @@
 			--navigation-layout: overlay;
 			row-gap: 0;
 			border-top: 1px solid $grey-01;
-			
+
 
 			&__responsive-container {
 				display: none !important;
@@ -157,6 +154,7 @@
 
 			&-item {
 				border-bottom: 1px solid $grey-01;
+
 				&_content {
 					// Empty: kept for future overrides if needed
 				}
@@ -175,6 +173,46 @@
 		.wp-block-navigation__responsive-container {
 			display: flex !important;
 			flex-direction: row;
+		}
+	}
+}
+
+/* ------------------------------
+	Dropdown submenu (mobile)
+	------------------------------ */
+@media (max-width: $screen-lg) {
+	.wp-block-navigation__responsive-container.is-menu-open {
+		.wp-block-navigation-item.has-child .wp-block-navigation__submenu-container {
+			overflow: hidden;
+			max-height: 0;
+			visibility: hidden;
+			opacity: 0;
+			transition: all 0.3s ease-in-out;
+			padding-top:0;
+		}
+
+		.wp-block-navigation-item.has-child.is-submenu-open>.wp-block-navigation__submenu-container {
+			visibility: visible;
+			opacity: 1;
+			max-height: 30rem;
+		}
+
+		.c-menu-item-wrapper {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			padding-right: 1.3rem;
+		}
+
+		.c-submenu-toggle {
+			min-width: 35px;
+			height: 35px;
+			cursor: pointer;
+			border: none;
+			padding: 0;
+			color: inherit;
+			align-items: center;
+			justify-content: center;
 		}
 	}
 }

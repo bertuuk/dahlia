@@ -1,0 +1,38 @@
+@use '../base/vars' as *;
+
+.wp-block-button {
+    &.button-primary {}
+
+    &.button-secondary {}
+
+    &.button-ghost {
+        background-color: $grey-02;
+        color: $black;
+
+        >* {
+            background-color: $black;
+        }
+    }
+
+    // element del bloc
+    .wp-block-button__link {
+        transition: all .2s ease;
+
+        &:hover {
+            background-color: $black !important;
+            color: $white !important;
+        }
+    }
+
+    // modificador del bloc
+
+    // element del bloc sota el modificador (no &__link!)
+    &.is-style-link {
+        .wp-block-button__link {
+            &:hover {
+                background-color: transparent !important;
+                color: $primary-06 !important;
+            }
+        }
+    }
+}

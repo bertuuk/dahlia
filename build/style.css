@@ -2730,6 +2730,25 @@ button:hover * {
   }
 }
 
+.wp-block-button.button-ghost {
+  background-color: var(--wp--preset--color--grey-02, #F0F0F0);
+  color: var(--wp--preset--color--black, #151515);
+}
+.wp-block-button.button-ghost > * {
+  background-color: var(--wp--preset--color--black, #151515);
+}
+.wp-block-button .wp-block-button__link {
+  transition: all 0.2s ease;
+}
+.wp-block-button .wp-block-button__link:hover {
+  background-color: var(--wp--preset--color--black, #151515) !important;
+  color: var(--wp--preset--color--color-primary-00, #FFFAFA) !important;
+}
+.wp-block-button.is-style-link .wp-block-button__link:hover {
+  background-color: transparent !important;
+  color: var(--wp--preset--color--color-primary-06, #E01F1F) !important;
+}
+
 .dahlia-chip {
   padding-left: 10px;
   padding-right: 10px;
@@ -2767,4 +2786,8 @@ button:hover * {
 .wp-block-post-comments-form .comment-form textarea {
   border-radius: 10px;
   background-color: var(--wp--preset--color--color-primary-00, #FFFAFA);
+}
+
+.wp-block-search .wp-block-search__button:hover * {
+  background-color: inherit !important;
 }

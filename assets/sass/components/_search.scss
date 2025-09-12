@@ -1,0 +1,9 @@
+.wp-block-search {
+    .wp-block-search__button{
+        &:hover{
+            *{
+            background-color:inherit !important;
+            }
+        }
+    }
+}

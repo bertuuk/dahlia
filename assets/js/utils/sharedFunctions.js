@@ -1,4 +1,4 @@
-function createDahliaIcon({ name, size = 'small', ariaHidden = true }) {
+export function createDahliaIcon({ name, size = 'small', ariaHidden = true }) {
 	const span = document.createElement('span');
 	span.classList.add('dahlia-icon', `di-${size}`, `dahlia-fi-rr-${name}`);
 	if (ariaHidden) {
@@ -15,7 +15,7 @@ function createDahliaIcon({ name, size = 'small', ariaHidden = true }) {
  * @param {string} options.name - The new icon name (e.g. "angle-small-left").
  * @param {string} [options.size] - The new size (e.g. "extrasmall", "small", "large", "extralarge").
  */
-function changeDahliaIcon(el, { name, size }) {
+export function changeDahliaIcon(el, { name, size }) {
 	if (!el || !el.classList.contains('dahlia-icon')) {
 		console.warn('changeDahliaIcon: provided element is not a Dahlia icon');
 		return;
