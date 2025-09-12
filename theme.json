@@ -260,7 +260,7 @@
                 "typography": {
                     "fontFamily": "var:preset|font-family|primary-font",
                     "letterSpacing": "-0.03rem",
-                    "fontSize": "var:preset|font-size|small-large"
+                    "fontSize": "var:preset|font-size|large-medium"
                 },
                 "spacing": {
                     "padding": {
