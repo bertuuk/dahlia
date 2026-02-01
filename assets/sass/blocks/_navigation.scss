@@ -214,5 +214,12 @@
 			align-items: center;
 			justify-content: center;
 		}
+		.wp-block-search{
+			width:100%;
+			padding:1rem;
+			&__inside-wrapper{
+				justify-content:center;
+			}
+		}
 	}
 }
