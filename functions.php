@@ -189,7 +189,9 @@ add_filter('render_block_core/post-terms', function ($content, $block) {
     if ($prefix !== '') {
         $output .= '<span class="wp-block-post-terms__prefix">' . esc_html($prefix) . '</span>';
     }
-    $output .= implode(wp_kses_post($separator), $links);
+
+    $separator_markup = '<span class="wp-block-post-terms__separator">' . wp_kses_post($separator) . '</span>';
+    $output .= implode($separator_markup, $links);
     $output .= '</div>';
 
     return $output;
