@@ -1,16 +1,36 @@
 @use '../base/vars' as *;
-.no-image-mobile{
-    figure{
+
+.no-image-mobile {
+    figure {
         @media(max-width: $screen-md) {
             display: none;
         }
     }
 }
 
-.change-flex-order-mobile{
+.change-flex-order-mobile {
     .wp-block-column:nth-child(1) {
         @media(max-width: $screen-lg) {
             order: 2;
+        }
+    }
+}
+
+.center-on-mobile {
+    @media(max-width: $screen-lg) {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+
+    }
+
+    >*, .wp-block-navigation__container {
+        @media(max-width: $screen-lg) {
+            width:100%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
         }
     }
 }
