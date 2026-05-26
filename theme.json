@@ -158,6 +158,7 @@
         "typography": {
             "customFontSize": true,
             "defaultFontSizes": false,
+            "lineHeight": true,
             "fontSizes": [
                 {
                     "slug": "extrasmall",
