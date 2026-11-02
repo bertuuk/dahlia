@@ -1,0 +1,124 @@
+@use '../base/vars' as *;
+
+.wp-block-accordion {
+	--dahlia-accordion-icon-size: 2rem;
+	--dahlia-accordion-icon-line: 0.75rem;
+
+	margin-block: 0;
+}
+
+.wp-block-accordion-item {
+	border-bottom: 1px solid $grey-03;
+	margin-block-start: 0;
+}
+
+.wp-block-accordion-heading {
+	margin: 0;
+	padding: 0;
+
+	.wp-block-accordion-heading__toggle {
+		align-items: center;
+		background: transparent;
+		border: 0;
+		border-radius: 0;
+		box-shadow: none;
+		color: $grey-10;
+		display: flex;
+		font: inherit;
+		gap: var(--wp--preset--spacing--20, 1rem);
+		justify-content: space-between;
+		text-align: start;
+		text-decoration: none;
+		width: 100%;
+
+		&:hover {
+			background: transparent;
+			box-shadow: none;
+			color: $primary-06;
+			text-decoration: none;
+
+			.wp-block-accordion-heading__toggle-icon {
+				background: $primary-02;
+			}
+		}
+
+		&:focus-visible {
+			background: transparent;
+			border-radius: 0.25rem;
+			box-shadow: none;
+			outline: 2px solid $primary-06;
+			outline-offset: 4px;
+		}
+	}
+}
+
+.wp-block-accordion-heading__toggle-title {
+	flex: 1;
+}
+
+.wp-block-accordion-heading__toggle-icon {
+	align-items: center;
+	background: $primary-01;
+	border-radius: 50%;
+	color: $primary-06;
+	display: inline-flex;
+	flex: 0 0 var(--dahlia-accordion-icon-size);
+	font-size: 0;
+	height: var(--dahlia-accordion-icon-size);
+	justify-content: center;
+	position: relative;
+	width: var(--dahlia-accordion-icon-size);
+
+	&::before,
+	&::after {
+		background: currentcolor;
+		content: "";
+		height: 2px;
+		position: absolute;
+		transition: transform 180ms ease;
+		width: var(--dahlia-accordion-icon-line);
+	}
+
+	&::after {
+		transform: rotate(90deg);
+	}
+}
+
+.wp-block-accordion-item.is-open,
+.wp-block-accordion-heading__toggle[aria-expanded="true"] {
+	.wp-block-accordion-heading__toggle-icon {
+		background: $primary-06;
+		color: $primary-00;
+
+		&::before {
+			transform: rotate(45deg);
+		}
+
+		&::after {
+			transform: rotate(-45deg);
+		}
+	}
+}
+
+.wp-block-accordion-panel {
+	> p:not([class*="-font-size"]) {
+		font-size: var(--wp--preset--font-size--small, 1rem);
+	}
+
+	> :first-child {
+		margin-block-start: 0;
+	}
+
+	> :last-child {
+		margin-block-end: 0;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.wp-block-accordion-heading__toggle-icon {
+		&::before,
+		&::after {
+			transition: none;
+		}
+	}
+}

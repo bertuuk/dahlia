@@ -158,6 +158,7 @@
         "typography": {
             "customFontSize": true,
             "defaultFontSizes": false,
+            "lineHeight": true,
             "fontSizes": [
                 {
                     "slug": "extrasmall",
@@ -365,6 +366,41 @@
                 "spacing": {
                     "padding": {
                         "top": "15px"
+                    }
+                }
+            },
+            "core/accordion": {
+                "spacing": {
+                    "blockGap": "0"
+                }
+            },
+            "core/accordion-item": {
+                "spacing": {
+                    "blockGap": "0"
+                }
+            },
+            "core/accordion-heading": {
+                "css": "&__toggle { padding: var(--wp--preset--spacing--20); }",
+                "typography": {
+                    "fontFamily": "var:preset|font-family|primary-font",
+                    "fontSize": "var:preset|font-size|base",
+                    "fontWeight": "700",
+                    "lineHeight": "1.25"
+                }
+            },
+            "core/accordion-panel": {
+                "color": {
+                    "text": "var:preset|color|grey-07"
+                },
+                "typography": {
+                    "fontSize": "var:preset|font-size|small",
+                    "lineHeight": "1.7"
+                },
+                "spacing": {
+                    "padding": {
+                        "bottom": "var:preset|spacing|30",
+                        "left": "var:preset|spacing|20",
+                        "right": "var:preset|spacing|20"
                     }
                 }
             }

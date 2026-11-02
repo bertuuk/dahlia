@@ -287,6 +287,14 @@ add_action('init', function () {
         'dahlia-patterns',
         array('label' => __('Dahlia Patterns', 'dahlia'))
     );
+    register_block_pattern_category(
+        'dahlia-sections',
+        array('label' => __('Dahlia Sections', 'dahlia'))
+    );
+    register_block_pattern_category(
+        'dahlia-cards',
+        array('label' => __('Dahlia Cards', 'dahlia'))
+    );
 });
 
 add_filter('comment_form_default_fields', 'website_remove');
