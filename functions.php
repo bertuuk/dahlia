@@ -304,3 +304,10 @@ function website_remove($fields)
         unset($fields['url']);
     return $fields;
 }
+
+// Updates from GitHub Releases. Loaded only if present, so the file can be
+// left out of a WordPress.org build (directory themes can't ship an updater).
+if (file_exists(get_template_directory() . '/inc/class-updater.php')) {
+    require_once get_template_directory() . '/inc/class-updater.php';
+    new Dahlia_Theme_Updater('dahlia', 'bertuuk/dahlia');
+}
