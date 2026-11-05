@@ -1,6 +1,6 @@
 {
   "name": "dahlia",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Wordpress theme based on guttenberg blocks",
   "main": "webpack.config.js",
   "scripts": {
