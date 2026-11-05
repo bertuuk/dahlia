@@ -1,57 +1,54 @@
-// scripts/update-version.js
+// tools/update-version.js
+// Updates the version number in every file that carries it, and adds an empty
+// CHANGELOG entry if there isn't one. It does NOT commit, tag or push:
+// git flow does that when you finish the release.
+//
+// Usage: npm run update-version -- 1.2.3
 
 const fs = require("fs");
 const path = require("path");
 
 const version = process.argv[2];
-
-if (!version) {
-  console.error("❌ Please provide a version. Example: node scripts/update-version.js 1.2.3");
+if (!version || !/^\d+\.\d+\.\d+$/.test(version)) {
+  console.error("❌ Give a version like 1.2.3. Example: npm run update-version -- 1.2.3");
   process.exit(1);
 }
 
-const filesToUpdate = [
-  {
-    file: "style.css",
-    pattern: /Version:\s*[0-9.]+/,
-    replace: `Version: ${version}`,
-  },
-  {
-    file: "readme.txt",
-    pattern: /Stable tag:\s*[0-9.]+/,
-    replace: `Stable tag: ${version}`,
-  },
-  {
-    file: "README.md",
-    pattern: /Stable version:\s*[0-9.]+/,
-    replace: `Stable version: ${version}`,
-  }
+const root = path.join(__dirname, "..");
+const read = (f) => fs.readFileSync(path.join(root, f), "utf8");
+const write = (f, c) => fs.writeFileSync(path.join(root, f), c);
+const exists = (f) => fs.existsSync(path.join(root, f));
+
+const textFiles = [
+  { file: "style.css", pattern: /^Version:\s*[0-9.]+/m, replace: `Version: ${version}` },
+  { file: "readme.txt", pattern: /^Stable tag:\s*[0-9.]+/m, replace: `Stable tag: ${version}` },
+  { file: "README.md", pattern: /Stable version:\s*[0-9.]+/, replace: `Stable version: ${version}` },
 ];
 
-filesToUpdate.forEach(({ file, pattern, replace }) => {
-  const fullPath = path.join(__dirname, "..", file);
-  if (!fs.existsSync(fullPath)) {
-    console.warn(`⚠️ File not found: ${file}`);
-    return;
-  }
-
-  const content = fs.readFileSync(fullPath, "utf8");
-  const updated = content.replace(pattern, replace);
-
-  fs.writeFileSync(fullPath, updated);
-  console.log(`✅ Updated version in ${file}`);
+textFiles.forEach(({ file, pattern, replace }) => {
+  if (!exists(file)) return;
+  write(file, read(file).replace(pattern, replace));
+  console.log(`✅ ${file}`);
 });
 
-console.log(`\n🎉 Version updated to ${version}`);
+["package.json", "package-lock.json"].forEach((file) => {
+  if (!exists(file)) return;
+  const json = JSON.parse(read(file));
+  json.version = version;
+  if (json.packages && json.packages[""]) json.packages[""].version = version;
+  write(file, JSON.stringify(json, null, 2) + "\n");
+  console.log(`✅ ${file}`);
+});
 
-const { execSync } = require("child_process");
-
-try {
-  execSync(`git add .`);
-  execSync(`git commit -m "Update files to v${version}"`);
-  execSync(`git push`);
-  execSync(`git push --tags`);
-  console.log(`🚀 Git commit + tag pushed: v${version}`);
-} catch (err) {
-  console.error("❌ Git commands failed:", err.message);
+if (exists("CHANGELOG.md")) {
+  const changelog = read("CHANGELOG.md");
+  if (!changelog.includes(`## [${version}]`)) {
+    const today = new Date().toISOString().slice(0, 10);
+    const entry = `## [${version}] - ${today}\n\n- \n\n`;
+    const at = changelog.search(/^## \[/m);
+    write("CHANGELOG.md", at === -1 ? `${changelog.trimEnd()}\n\n${entry}` : changelog.slice(0, at) + entry + changelog.slice(at));
+    console.log(`✅ CHANGELOG.md: empty entry added for ${version}. Fill it in before finishing the release.`);
+  }
 }
+
+console.log(`\n🎉 Version ${version}. Now: write the CHANGELOG entry, commit, and finish the release.`);
