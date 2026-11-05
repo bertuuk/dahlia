@@ -1,0 +1,88 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+
+permissions:
+  contents: write
+
+env:
+  SLUG: dahlia
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check versions and changelog
+        run: |
+          set -euo pipefail
+          # Accepts v1.2.3 and v.1.2.3 (git flow prefix "v.")
+          VERSION="${GITHUB_REF_NAME#v}"
+          VERSION="${VERSION#.}"
+          if ! [[ "$VERSION" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+            echo "::error::Tag $GITHUB_REF_NAME is not vX.Y.Z"; exit 1
+          fi
+
+          STYLE=$(grep -m1 -E '^Version:' style.css | sed -E 's/^Version:[[:space:]]*//' | tr -d '\r ')
+          [ "$STYLE" = "$VERSION" ] || { echo "::error::style.css says $STYLE, tag says $VERSION"; exit 1; }
+
+          if [ -f package.json ]; then
+            PKG=$(node -p "require('./package.json').version")
+            [ "$PKG" = "$VERSION" ] || { echo "::error::package.json says $PKG, tag says $VERSION"; exit 1; }
+          fi
+
+          if [ -f readme.txt ]; then
+            README=$(grep -m1 -E '^Stable tag:' readme.txt | sed -E 's/^Stable tag:[[:space:]]*//' | tr -d '\r ')
+            [ "$README" = "$VERSION" ] || { echo "::error::readme.txt says $README, tag says $VERSION"; exit 1; }
+          fi
+
+          mkdir -p dist
+          awk -v v="$VERSION" '
+            index($0, "## [" v "]") == 1 { found = 1; next }
+            found && /^## / { exit }
+            found { print }
+          ' CHANGELOG.md | sed -e '/./,$!d' > dist/notes.md
+          if ! grep -qE '[[:alnum:]]' dist/notes.md; then
+            echo "::error::CHANGELOG.md has no notes under ## [$VERSION]"; exit 1
+          fi
+
+      - name: Build zip
+        run: |
+          set -euo pipefail
+          STAGE="dist/stage/$SLUG"
+          mkdir -p "$STAGE"
+          rsync -a ./ "$STAGE/" \
+            --exclude '/dist' \
+            --exclude '.git' \
+            --exclude '/.github' \
+            --exclude '/.gitignore' \
+            --exclude '/node_modules' \
+            --exclude '/tools' \
+            --exclude '/assets/sass' \
+            --exclude '/package.json' \
+            --exclude '/package-lock.json' \
+            --exclude '/webpack.config.js' \
+            --exclude '/CHANGELOG.md' \
+            --exclude '.DS_Store' \
+            --exclude '*.map'
+          (cd dist/stage && zip -rqX "../$SLUG.zip" "$SLUG")
+
+          unzip -Z1 "dist/$SLUG.zip" > dist/files.txt
+          grep -qx "$SLUG/style.css" dist/files.txt || { echo "::error::style.css missing from zip"; exit 1; }
+          if grep -v "^$SLUG/" dist/files.txt; then
+            echo "::error::Files outside $SLUG/ in zip"; exit 1
+          fi
+          echo "$(wc -l < dist/files.txt) files in $SLUG.zip"
+
+      - name: Publish release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "$GITHUB_REF_NAME" "dist/$SLUG.zip" \
+            --title "$GITHUB_REF_NAME" \
+            --notes-file dist/notes.md \
+            --latest

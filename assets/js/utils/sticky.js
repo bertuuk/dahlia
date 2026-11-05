@@ -4,20 +4,25 @@ export function initStickyScroll(selector, options = {}) {
 
 	const animate = options.animate !== false;
 	const offset = options.offset || 20;
+	// Reserve the header's space on its immediate container (the template part),
+	// not on <body>: padding on <body> shifts all of .wp-site-blocks and counts as CLS.
+	const container = element.parentElement;
 
 	let threshold = element.offsetHeight + offset;
-	let originalBodyPadding = parseFloat(getComputedStyle(document.body).paddingTop) || 0;
 	let isSticky = false;
     let isFixed = getComputedStyle(element).position == 'fixed';
 
-	function applyBodyPadding() {
-        if (getComputedStyle(element).position !== 'fixed') return;
-		const stickyHeight = element.offsetHeight;
-		document.body.style.paddingTop = `${stickyHeight}px`;
+	function reserveHeaderSpace() {
+		if (!container) return;
+		if (getComputedStyle(element).position !== 'fixed') {
+			container.style.minHeight = '';
+			return;
+		}
+		container.style.minHeight = `${element.offsetHeight}px`;
 	}
 
-	function resetBodyPadding() {
-		document.body.style.paddingTop = '0px';
+	function releaseHeaderSpace() {
+		if (container) container.style.minHeight = '';
 	}
 
 	function handleScroll() {
@@ -27,7 +32,7 @@ export function initStickyScroll(selector, options = {}) {
             if(isFixed){
                 if (animate) element.classList.add('has-animated-sticky');
             }
-            applyBodyPadding();
+            reserveHeaderSpace();
             isSticky = true;
         } else if (window.scrollY <= threshold && isSticky) {
             element.classList.remove('has-animated-sticky');
@@ -38,20 +43,21 @@ export function initStickyScroll(selector, options = {}) {
                 setTimeout(() => {
                     element.classList.remove('is-sticky-desktop');
                     element.classList.remove('has-animated-dropup');
-                    resetBodyPadding();
+                    releaseHeaderSpace();
                     isSticky = false;
                 }, 200);
             } else {
                 element.classList.remove('is-sticky-desktop');
-                resetBodyPadding();
+                releaseHeaderSpace();
                 isSticky = false;
             }
         }
     }
 	window.addEventListener('resize', () => {
 		threshold = element.offsetHeight + offset;
-		originalBodyPadding = parseFloat(getComputedStyle(document.body).paddingTop) || 0;
-		if (isSticky) applyBodyPadding();
+		// Keeps the reservation in sync with the header height, and clears it
+		// if the header is no longer fixed (e.g. window narrowed below $screen-lg).
+		if (isSticky) reserveHeaderSpace();
 	});
 
 	window.addEventListener('scroll', handleScroll);
